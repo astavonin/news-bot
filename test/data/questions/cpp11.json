@@ -1,0 +1,389 @@
+
+
+{
+  "items": [
+    {
+      "tags": [
+        "c++",
+        "c++11",
+        "language-lawyer",
+        "rvo"
+      ],
+      "owner": {
+        "reputation": 13986,
+        "user_id": 5769463,
+        "user_type": "registered",
+        "accept_rate": 93,
+        "profile_image": "https://www.gravatar.com/avatar/71a28b5fac23ee656a32cc7ea6df54ec?s=128&d=identicon&r=PG&f=1",
+        "display_name": "ead",
+        "link": "https://stackoverflow.com/users/5769463/ead"
+      },
+      "is_answered": true,
+      "view_count": 110,
+      "answer_count": 1,
+      "score": 6,
+      "last_activity_date": 1556537836,
+      "creation_date": 1556527939,
+      "last_edit_date": 1556537836,
+      "question_id": 55899889,
+      "link": "https://stackoverflow.com/questions/55899889/how-to-ensure-moving-without-impeding-rvo",
+      "title": "How to ensure moving without impeding RVO?"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11"
+      ],
+      "owner": {
+        "reputation": 11,
+        "user_id": 10967142,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/d3ea0a1f1057f655bc0cce9d095d33f9?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Harsh",
+        "link": "https://stackoverflow.com/users/10967142/harsh"
+      },
+      "is_answered": true,
+      "view_count": 32,
+      "answer_count": 3,
+      "score": 2,
+      "last_activity_date": 1556428852,
+      "creation_date": 1556423004,
+      "last_edit_date": 1556428852,
+      "question_id": 55886826,
+      "link": "https://stackoverflow.com/questions/55886826/overload-resolution-doesnt-choose-template-when-arguments-are-different",
+      "title": "Overload resolution doesn&#39;t choose template when arguments are different"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11",
+        "templates"
+      ],
+      "owner": {
+        "reputation": 348,
+        "user_id": 4089301,
+        "user_type": "registered",
+        "accept_rate": 71,
+        "profile_image": "https://www.gravatar.com/avatar/33ab191ba11b3c63707de59f80dc0e22?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Tony",
+        "link": "https://stackoverflow.com/users/4089301/tony"
+      },
+      "is_answered": false,
+      "view_count": 40,
+      "answer_count": 1,
+      "score": 2,
+      "last_activity_date": 1556426134,
+      "creation_date": 1556422298,
+      "last_edit_date": 1556424428,
+      "question_id": 55886786,
+      "link": "https://stackoverflow.com/questions/55886786/could-not-infer-template-argument-when-using-typename-containervalue-type-as",
+      "title": "Could not infer template argument when using &quot;typename Container::value_type&quot; as the return value"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 11421401,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/27acb689b3b114937b9d320fe7ea04d9?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Afzel Adam",
+        "link": "https://stackoverflow.com/users/11421401/afzel-adam"
+      },
+      "is_answered": true,
+      "view_count": 63,
+      "answer_count": 2,
+      "score": 0,
+      "last_activity_date": 1556478790,
+      "creation_date": 1556474563,
+      "question_id": 55893114,
+      "link": "https://stackoverflow.com/questions/55893114/could-this-be-a-memory-leak",
+      "title": "Could this be a memory leak?"
+    },
+    {
+      "tags": [
+        "c++11",
+        "templates",
+        "c++14",
+        "metaprogramming"
+      ],
+      "owner": {
+        "reputation": 533,
+        "user_id": 4080543,
+        "user_type": "registered",
+        "accept_rate": 100,
+        "profile_image": "https://www.gravatar.com/avatar/09a1ce48bfe85fb56524408afe18fe89?s=128&d=identicon&r=PG&f=1",
+        "display_name": "MTMD",
+        "link": "https://stackoverflow.com/users/4080543/mtmd"
+      },
+      "is_answered": true,
+      "view_count": 35,
+      "accepted_answer_id": 55895240,
+      "answer_count": 2,
+      "score": 0,
+      "last_activity_date": 1556492861,
+      "creation_date": 1556485650,
+      "last_edit_date": 1556487657,
+      "question_id": 55894583,
+      "link": "https://stackoverflow.com/questions/55894583/why-non-deductible-template-parameters-is-problematic",
+      "title": "Why non deductible template parameters is problematic?"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11",
+        "templates",
+        "inheritance",
+        "sizeof"
+      ],
+      "owner": {
+        "reputation": 28,
+        "user_id": 11135243,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/9fb83138060effc3659e1750819b0419?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Saturnu",
+        "link": "https://stackoverflow.com/users/11135243/saturnu"
+      },
+      "is_answered": false,
+      "view_count": 50,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1556524147,
+      "creation_date": 1556524147,
+      "question_id": 55899012,
+      "link": "https://stackoverflow.com/questions/55899012/size-of-parent-and-child-class-with-same-members",
+      "title": "Size of parent and child class with same members"
+    },
+    {
+      "tags": [
+        "c++11",
+        "packaged-task"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 5664801,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/26dff5513713d8d5c4e9311cc488443c?s=128&d=identicon&r=PG&f=1",
+        "display_name": "theh2o",
+        "link": "https://stackoverflow.com/users/5664801/theh2o"
+      },
+      "is_answered": false,
+      "view_count": 16,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1556523394,
+      "creation_date": 1556507588,
+      "last_edit_date": 1556523394,
+      "question_id": 55896504,
+      "link": "https://stackoverflow.com/questions/55896504/compilation-error-while-passing-queue-of-packaged-tasks-as-reference",
+      "title": "Compilation error while passing queue of packaged_tasks as reference"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11",
+        "c++17"
+      ],
+      "owner": {
+        "reputation": 491,
+        "user_id": 2403819,
+        "user_type": "registered",
+        "accept_rate": 82,
+        "profile_image": "https://www.gravatar.com/avatar/e2a67993748e1104299bea8d86656a65?s=128&d=identicon&r=PG",
+        "display_name": "Jon",
+        "link": "https://stackoverflow.com/users/2403819/jon"
+      },
+      "is_answered": false,
+      "view_count": 50,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1556482184,
+      "creation_date": 1556474783,
+      "question_id": 55893140,
+      "link": "https://stackoverflow.com/questions/55893140/reading-a-text-file-with-c-to-read-in-the-value-that-follows-a-specific-key-wo",
+      "title": "Reading a text file with C++ to read in the value that follows a specific key word"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11",
+        "atom-editor"
+      ],
+      "owner": {
+        "reputation": 81,
+        "user_id": 7096101,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/cc31fa72c28770d65cc6762e92fb7911?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Yolanda Hui",
+        "link": "https://stackoverflow.com/users/7096101/yolanda-hui"
+      },
+      "is_answered": false,
+      "view_count": 28,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1556459803,
+      "creation_date": 1556459803,
+      "question_id": 55890975,
+      "link": "https://stackoverflow.com/questions/55890975/gcc-make-run-grammar-not-supported",
+      "title": "gcc-make-run: Grammar Not Supported"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 11421401,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/27acb689b3b114937b9d320fe7ea04d9?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Afzel Adam",
+        "link": "https://stackoverflow.com/users/11421401/afzel-adam"
+      },
+      "is_answered": false,
+      "view_count": 51,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1556419727,
+      "creation_date": 1556413926,
+      "last_edit_date": 1556414112,
+      "question_id": 55886224,
+      "link": "https://stackoverflow.com/questions/55886224/new-and-delete-using-pointers",
+      "title": "New and Delete using pointers"
+    },
+    {
+      "tags": [
+        "c++",
+        "arrays",
+        "c++11",
+        "byte",
+        "idiomatic"
+      ],
+      "owner": {
+        "reputation": 38151,
+        "user_id": 1593077,
+        "user_type": "registered",
+        "accept_rate": 49,
+        "profile_image": "https://www.gravatar.com/avatar/10c44e0d9568e48d05708ae196ad936f?s=128&d=identicon&r=PG",
+        "display_name": "einpoklum",
+        "link": "https://stackoverflow.com/users/1593077/einpoklum"
+      },
+      "is_answered": true,
+      "view_count": 70,
+      "answer_count": 1,
+      "score": -1,
+      "last_activity_date": 1556450556,
+      "creation_date": 1556442228,
+      "last_edit_date": 1556450556,
+      "question_id": 55888672,
+      "link": "https://stackoverflow.com/questions/55888672/how-should-i-insert-a-value-into-the-middle-of-another",
+      "title": "How should I insert a value into the &quot;middle&quot; of another?"
+    },
+    {
+      "tags": [
+        "multithreading",
+        "c++11",
+        "pthreads",
+        "producer-consumer"
+      ],
+      "owner": {
+        "reputation": 90,
+        "user_id": 10334333,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/T6E1x.jpg?s=128&g=1",
+        "display_name": "Vencat",
+        "link": "https://stackoverflow.com/users/10334333/vencat"
+      },
+      "is_answered": false,
+      "view_count": 21,
+      "answer_count": 0,
+      "score": -1,
+      "last_activity_date": 1556517924,
+      "creation_date": 1556516661,
+      "last_edit_date": 1556517924,
+      "question_id": 55897593,
+      "link": "https://stackoverflow.com/questions/55897593/running-consumer-threads-sequentially",
+      "title": "Running consumer threads sequentially"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11"
+      ],
+      "owner": {
+        "reputation": 81,
+        "user_id": 7096101,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/cc31fa72c28770d65cc6762e92fb7911?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Yolanda Hui",
+        "link": "https://stackoverflow.com/users/7096101/yolanda-hui"
+      },
+      "is_answered": true,
+      "view_count": 80,
+      "answer_count": 2,
+      "score": -2,
+      "last_activity_date": 1556518085,
+      "creation_date": 1556517106,
+      "last_edit_date": 1556517400,
+      "question_id": 55897668,
+      "link": "https://stackoverflow.com/questions/55897668/string-not-reversing-in-c",
+      "title": "String not reversing in C++"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11"
+      ],
+      "owner": {
+        "reputation": 2,
+        "user_id": 10168446,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/932b849edcf9140f1e56f91d98373b26?s=128&d=identicon&r=PG&f=1",
+        "display_name": "byrnexu",
+        "link": "https://stackoverflow.com/users/10168446/byrnexu"
+      },
+      "is_answered": false,
+      "view_count": 24,
+      "answer_count": 0,
+      "score": -2,
+      "last_activity_date": 1556538679,
+      "creation_date": 1556537074,
+      "last_edit_date": 1556538679,
+      "question_id": 55902352,
+      "link": "https://stackoverflow.com/questions/55902352/a-question-about-the-increase-in-stdatomic",
+      "title": "A question about the increase in std::atomic"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11"
+      ],
+      "owner": {
+        "reputation": 3,
+        "user_id": 10904800,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/b97b7afee25bd9b4504293fdbbb1692d?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Tuhin Panda",
+        "link": "https://stackoverflow.com/users/10904800/tuhin-panda"
+      },
+      "is_answered": false,
+      "view_count": 33,
+      "closed_date": 1556522335,
+      "answer_count": 0,
+      "score": -2,
+      "last_activity_date": 1556522360,
+      "creation_date": 1556522213,
+      "last_edit_date": 1556522360,
+      "question_id": 55898614,
+      "link": "https://stackoverflow.com/questions/55898614/why-child-object-can-be-assigned-to-base-but-not-base-to-child-how-it-differs-w",
+      "closed_reason": "duplicate",
+      "title": "why child object can be assigned to base but not base to child, how it differs when two class are differ different"
+    }
+  ],
+  "has_more": false,
+  "quota_max": 10000,
+  "quota_remaining": 9879
+}
+

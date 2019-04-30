@@ -1,0 +1,270 @@
+
+
+{
+  "items": [
+    {
+      "tags": [
+        "c++",
+        "c++17"
+      ],
+      "owner": {
+        "reputation": 4218,
+        "user_id": 1366368,
+        "user_type": "registered",
+        "accept_rate": 69,
+        "profile_image": "https://i.stack.imgur.com/9CxXt.jpg?s=128&g=1",
+        "display_name": "Adrian",
+        "link": "https://stackoverflow.com/users/1366368/adrian"
+      },
+      "is_answered": true,
+      "view_count": 242,
+      "accepted_answer_id": 55892141,
+      "answer_count": 1,
+      "score": 9,
+      "last_activity_date": 1556467999,
+      "creation_date": 1556467678,
+      "question_id": 55892101,
+      "link": "https://stackoverflow.com/questions/55892101/is-there-a-way-to-detect-if-the-current-member-function-is-operating-on-an-lvalu",
+      "title": "Is there a way to detect if the current member function is operating on an lvalue or rvalue?"
+    },
+    {
+      "tags": [
+        "c++",
+        "arrays",
+        "c++17",
+        "one-to-many",
+        "handle"
+      ],
+      "owner": {
+        "reputation": 2822,
+        "user_id": 3577745,
+        "user_type": "registered",
+        "accept_rate": 73,
+        "profile_image": "https://www.gravatar.com/avatar/4646095ed212f8392ed0cd522b84e7e3?s=128&d=identicon&r=PG&f=1",
+        "display_name": "javaLover",
+        "link": "https://stackoverflow.com/users/3577745/javalover"
+      },
+      "is_answered": false,
+      "view_count": 77,
+      "answer_count": 0,
+      "score": 6,
+      "last_activity_date": 1556527833,
+      "creation_date": 1556523078,
+      "last_edit_date": 1556527833,
+      "question_id": 55898783,
+      "link": "https://stackoverflow.com/questions/55898783/cleaning-nullptr-in-one-to-many-relation-that-use-custom-weak-pointer",
+      "title": "cleaning nullptr in one-to-many relation that use custom weak pointer"
+    },
+    {
+      "tags": [
+        "c++",
+        "optimization",
+        "memory-management",
+        "c++17"
+      ],
+      "owner": {
+        "reputation": 26,
+        "user_id": 11423471,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/56462b6fa9bf9ddd7ae7ff2492b8b231?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Tweelix",
+        "link": "https://stackoverflow.com/users/11423471/tweelix"
+      },
+      "is_answered": true,
+      "view_count": 129,
+      "answer_count": 2,
+      "score": 5,
+      "last_activity_date": 1556471477,
+      "creation_date": 1556467624,
+      "last_edit_date": 1556467743,
+      "question_id": 55892089,
+      "link": "https://stackoverflow.com/questions/55892089/what-is-the-proper-way-to-preallocate-memory-for-a-function-return-value-that-is",
+      "title": "What is the proper way to preallocate memory for a function return value that is called many times in a loop?"
+    },
+    {
+      "tags": [
+        "c++",
+        "multithreading",
+        "concurrency",
+        "c++17",
+        "atomic"
+      ],
+      "owner": {
+        "reputation": 12188,
+        "user_id": 5501675,
+        "user_type": "registered",
+        "accept_rate": 57,
+        "profile_image": "https://www.gravatar.com/avatar/9ea71bcc6b5c512a7d15da82db05f2ab?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Curious",
+        "link": "https://stackoverflow.com/users/5501675/curious"
+      },
+      "is_answered": false,
+      "view_count": 73,
+      "answer_count": 0,
+      "score": 5,
+      "last_activity_date": 1556490321,
+      "creation_date": 1556488947,
+      "last_edit_date": 1556490321,
+      "question_id": 55894943,
+      "link": "https://stackoverflow.com/questions/55894943/why-dont-standard-libraries-implement-stdatomic-for-structs-under-8-bytes-in",
+      "title": "Why don&#39;t standard libraries implement std::atomic for structs under 8 bytes in a lock-free manner?"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++17"
+      ],
+      "owner": {
+        "reputation": 4218,
+        "user_id": 1366368,
+        "user_type": "registered",
+        "accept_rate": 69,
+        "profile_image": "https://i.stack.imgur.com/9CxXt.jpg?s=128&g=1",
+        "display_name": "Adrian",
+        "link": "https://stackoverflow.com/users/1366368/adrian"
+      },
+      "is_answered": false,
+      "view_count": 37,
+      "closed_date": 1556476983,
+      "answer_count": 0,
+      "score": 1,
+      "last_activity_date": 1556476541,
+      "creation_date": 1556476541,
+      "question_id": 55893388,
+      "link": "https://stackoverflow.com/questions/55893388/how-does-overloading-lambdas-by-using-user-defined-deduction-guides-work",
+      "closed_reason": "duplicate",
+      "title": "How does overloading lambdas by using user-defined deduction guides work?"
+    },
+    {
+      "tags": [
+        "c++",
+        "visual-c++",
+        "c++17",
+        "variadic-templates"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 11421447,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/f043c962afd2868a8e35b5e1b185ac93?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Noah",
+        "link": "https://stackoverflow.com/users/11421447/noah"
+      },
+      "is_answered": true,
+      "view_count": 28,
+      "answer_count": 2,
+      "score": 0,
+      "last_activity_date": 1556490455,
+      "creation_date": 1556414515,
+      "question_id": 55886270,
+      "link": "https://stackoverflow.com/questions/55886270/how-to-remove-elements-from-variadic-template-argument",
+      "title": "How to remove elements from variadic template argument?"
+    },
+    {
+      "tags": [
+        "c++",
+        "pointers",
+        "c++17"
+      ],
+      "owner": {
+        "reputation": 77,
+        "user_id": 1940659,
+        "user_type": "registered",
+        "accept_rate": 67,
+        "profile_image": "https://www.gravatar.com/avatar/b361787688eed35cd2a7b10fabe4eacf?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Shivanand",
+        "link": "https://stackoverflow.com/users/1940659/shivanand"
+      },
+      "is_answered": false,
+      "view_count": 60,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1556479272,
+      "creation_date": 1556478448,
+      "last_edit_date": 1556479272,
+      "question_id": 55893672,
+      "link": "https://stackoverflow.com/questions/55893672/unable-to-run-a-wrapper-to-return-a-member-function-pointer",
+      "title": "Unable to run a wrapper to return a member function pointer"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11",
+        "c++17"
+      ],
+      "owner": {
+        "reputation": 491,
+        "user_id": 2403819,
+        "user_type": "registered",
+        "accept_rate": 82,
+        "profile_image": "https://www.gravatar.com/avatar/e2a67993748e1104299bea8d86656a65?s=128&d=identicon&r=PG",
+        "display_name": "Jon",
+        "link": "https://stackoverflow.com/users/2403819/jon"
+      },
+      "is_answered": false,
+      "view_count": 50,
+      "answer_count": 1,
+      "score": 0,
+      "last_activity_date": 1556482184,
+      "creation_date": 1556474783,
+      "question_id": 55893140,
+      "link": "https://stackoverflow.com/questions/55893140/reading-a-text-file-with-c-to-read-in-the-value-that-follows-a-specific-key-wo",
+      "title": "Reading a text file with C++ to read in the value that follows a specific key word"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++17"
+      ],
+      "owner": {
+        "reputation": 6,
+        "user_id": 9984240,
+        "user_type": "registered",
+        "profile_image": "https://graph.facebook.com/263487637409621/picture?type=large",
+        "display_name": "Serg Sz",
+        "link": "https://stackoverflow.com/users/9984240/serg-sz"
+      },
+      "is_answered": false,
+      "view_count": 53,
+      "closed_date": 1556492831,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1556492180,
+      "creation_date": 1556460901,
+      "last_edit_date": 1556492180,
+      "question_id": 55891132,
+      "link": "https://stackoverflow.com/questions/55891132/if-constexpr-compiling-details",
+      "closed_reason": "duplicate",
+      "title": "&quot;if constexpr&quot; compiling details"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++17",
+        "doubly-linked-list"
+      ],
+      "owner": {
+        "reputation": 1,
+        "user_id": 9549142,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/737292dc355864f3a5a90185590c7e17?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Mohamed Ahmed",
+        "link": "https://stackoverflow.com/users/9549142/mohamed-ahmed"
+      },
+      "is_answered": false,
+      "view_count": 31,
+      "answer_count": 0,
+      "score": -2,
+      "last_activity_date": 1556462885,
+      "creation_date": 1556459842,
+      "last_edit_date": 1556462885,
+      "question_id": 55890982,
+      "link": "https://stackoverflow.com/questions/55890982/how-to-traverse-a-linked-list-of-class-that-has-a-linked-list-as-an-attribute",
+      "title": "How to traverse a linked list of class that has a linked list as an attribute"
+    }
+  ],
+  "has_more": false,
+  "quota_max": 10000,
+  "quota_remaining": 9878
+}
+

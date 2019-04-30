@@ -1,0 +1,780 @@
+
+
+{
+  "items": [
+    {
+      "tags": [
+        "c++"
+      ],
+      "owner": {
+        "reputation": 1007,
+        "user_id": 501717,
+        "user_type": "registered",
+        "accept_rate": 62,
+        "profile_image": "https://www.gravatar.com/avatar/3f0d72b2985548b1edee590037362569?s=128&d=identicon&r=PG",
+        "display_name": "Bascy",
+        "link": "https://stackoverflow.com/users/501717/bascy"
+      },
+      "is_answered": true,
+      "view_count": 300,
+      "accepted_answer_id": 55890625,
+      "answer_count": 3,
+      "score": 10,
+      "last_activity_date": 1556480791,
+      "creation_date": 1556455411,
+      "last_edit_date": 1556455944,
+      "question_id": 55890369,
+      "link": "https://stackoverflow.com/questions/55890369/how-to-delegate-to-implementing-class",
+      "title": "How to delegate to implementing class"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++17"
+      ],
+      "owner": {
+        "reputation": 4218,
+        "user_id": 1366368,
+        "user_type": "registered",
+        "accept_rate": 69,
+        "profile_image": "https://i.stack.imgur.com/9CxXt.jpg?s=128&g=1",
+        "display_name": "Adrian",
+        "link": "https://stackoverflow.com/users/1366368/adrian"
+      },
+      "is_answered": true,
+      "view_count": 242,
+      "accepted_answer_id": 55892141,
+      "answer_count": 1,
+      "score": 9,
+      "last_activity_date": 1556467999,
+      "creation_date": 1556467678,
+      "question_id": 55892101,
+      "link": "https://stackoverflow.com/questions/55892101/is-there-a-way-to-detect-if-the-current-member-function-is-operating-on-an-lvalu",
+      "title": "Is there a way to detect if the current member function is operating on an lvalue or rvalue?"
+    },
+    {
+      "tags": [
+        "c++",
+        "oop",
+        "operator-overloading"
+      ],
+      "owner": {
+        "reputation": 60,
+        "user_id": 9815151,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/9efa5e3bb3a51938b6eb3903f54ff9db?s=128&d=identicon&r=PG",
+        "display_name": "Ben_TW",
+        "link": "https://stackoverflow.com/users/9815151/ben-tw"
+      },
+      "is_answered": true,
+      "view_count": 86,
+      "accepted_answer_id": 55886964,
+      "answer_count": 2,
+      "score": 6,
+      "last_activity_date": 1556436336,
+      "creation_date": 1556423559,
+      "last_edit_date": 1556425108,
+      "question_id": 55886871,
+      "link": "https://stackoverflow.com/questions/55886871/c-operator-overloading-works-but-doesnt-work",
+      "title": "c++ operator overloading += works but &lt;&lt; doesn&#39;t work"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11",
+        "language-lawyer",
+        "rvo"
+      ],
+      "owner": {
+        "reputation": 13986,
+        "user_id": 5769463,
+        "user_type": "registered",
+        "accept_rate": 93,
+        "profile_image": "https://www.gravatar.com/avatar/71a28b5fac23ee656a32cc7ea6df54ec?s=128&d=identicon&r=PG&f=1",
+        "display_name": "ead",
+        "link": "https://stackoverflow.com/users/5769463/ead"
+      },
+      "is_answered": true,
+      "view_count": 110,
+      "answer_count": 1,
+      "score": 6,
+      "last_activity_date": 1556537836,
+      "creation_date": 1556527939,
+      "last_edit_date": 1556537836,
+      "question_id": 55899889,
+      "link": "https://stackoverflow.com/questions/55899889/how-to-ensure-moving-without-impeding-rvo",
+      "title": "How to ensure moving without impeding RVO?"
+    },
+    {
+      "tags": [
+        "c++",
+        "arrays",
+        "c++17",
+        "one-to-many",
+        "handle"
+      ],
+      "owner": {
+        "reputation": 2822,
+        "user_id": 3577745,
+        "user_type": "registered",
+        "accept_rate": 73,
+        "profile_image": "https://www.gravatar.com/avatar/4646095ed212f8392ed0cd522b84e7e3?s=128&d=identicon&r=PG&f=1",
+        "display_name": "javaLover",
+        "link": "https://stackoverflow.com/users/3577745/javalover"
+      },
+      "is_answered": false,
+      "view_count": 77,
+      "answer_count": 0,
+      "score": 6,
+      "last_activity_date": 1556527833,
+      "creation_date": 1556523078,
+      "last_edit_date": 1556527833,
+      "question_id": 55898783,
+      "link": "https://stackoverflow.com/questions/55898783/cleaning-nullptr-in-one-to-many-relation-that-use-custom-weak-pointer",
+      "title": "cleaning nullptr in one-to-many relation that use custom weak pointer"
+    },
+    {
+      "tags": [
+        "c++",
+        "clang",
+        "constexpr"
+      ],
+      "owner": {
+        "reputation": 50,
+        "user_id": 6707172,
+        "user_type": "registered",
+        "profile_image": "https://lh6.googleusercontent.com/-_-oJ4-GxV-Q/AAAAAAAAAAI/AAAAAAAAIeI/nKtIUIyXOs0/photo.jpg?sz=128",
+        "display_name": "Dark Hell",
+        "link": "https://stackoverflow.com/users/6707172/dark-hell"
+      },
+      "is_answered": true,
+      "view_count": 79,
+      "accepted_answer_id": 55900139,
+      "answer_count": 2,
+      "score": 5,
+      "last_activity_date": 1556528919,
+      "creation_date": 1556528158,
+      "last_edit_date": 1556528471,
+      "question_id": 55899941,
+      "link": "https://stackoverflow.com/questions/55899941/clang-doesnt-evaluate-the-value-of-the-constexpr-function-for-the-non-constexpr",
+      "title": "Clang doesn&#39;t evaluate the value of the constexpr function for the non-constexpr variable at compile time"
+    },
+    {
+      "tags": [
+        "c++",
+        "optimization",
+        "memory-management",
+        "c++17"
+      ],
+      "owner": {
+        "reputation": 26,
+        "user_id": 11423471,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/56462b6fa9bf9ddd7ae7ff2492b8b231?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Tweelix",
+        "link": "https://stackoverflow.com/users/11423471/tweelix"
+      },
+      "is_answered": true,
+      "view_count": 129,
+      "answer_count": 2,
+      "score": 5,
+      "last_activity_date": 1556471477,
+      "creation_date": 1556467624,
+      "last_edit_date": 1556467743,
+      "question_id": 55892089,
+      "link": "https://stackoverflow.com/questions/55892089/what-is-the-proper-way-to-preallocate-memory-for-a-function-return-value-that-is",
+      "title": "What is the proper way to preallocate memory for a function return value that is called many times in a loop?"
+    },
+    {
+      "tags": [
+        "c++",
+        "multithreading",
+        "concurrency",
+        "c++17",
+        "atomic"
+      ],
+      "owner": {
+        "reputation": 12188,
+        "user_id": 5501675,
+        "user_type": "registered",
+        "accept_rate": 57,
+        "profile_image": "https://www.gravatar.com/avatar/9ea71bcc6b5c512a7d15da82db05f2ab?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Curious",
+        "link": "https://stackoverflow.com/users/5501675/curious"
+      },
+      "is_answered": false,
+      "view_count": 73,
+      "answer_count": 0,
+      "score": 5,
+      "last_activity_date": 1556490321,
+      "creation_date": 1556488947,
+      "last_edit_date": 1556490321,
+      "question_id": 55894943,
+      "link": "https://stackoverflow.com/questions/55894943/why-dont-standard-libraries-implement-stdatomic-for-structs-under-8-bytes-in",
+      "title": "Why don&#39;t standard libraries implement std::atomic for structs under 8 bytes in a lock-free manner?"
+    },
+    {
+      "tags": [
+        "c++",
+        "stl",
+        "return",
+        "unique-ptr",
+        "stdoptional"
+      ],
+      "owner": {
+        "reputation": 21,
+        "user_id": 11425501,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/9f01b2cfd9dabeb8d1b78697f3d4da72?s=128&d=identicon&r=PG&f=1",
+        "display_name": "devptr",
+        "link": "https://stackoverflow.com/users/11425501/devptr"
+      },
+      "is_answered": true,
+      "view_count": 121,
+      "answer_count": 1,
+      "score": 4,
+      "last_activity_date": 1556522830,
+      "creation_date": 1556519715,
+      "last_edit_date": 1556522830,
+      "question_id": 55898115,
+      "link": "https://stackoverflow.com/questions/55898115/when-is-it-appropriate-to-use-stdoptional",
+      "title": "When is it appropriate to use std::optional"
+    },
+    {
+      "tags": [
+        "c++"
+      ],
+      "owner": {
+        "reputation": 158,
+        "user_id": 6327671,
+        "user_type": "registered",
+        "accept_rate": 75,
+        "profile_image": "https://www.gravatar.com/avatar/edaa078c07f64b105935a2dda9256486?s=128&d=identicon&r=PG&f=1",
+        "display_name": "David Tran",
+        "link": "https://stackoverflow.com/users/6327671/david-tran"
+      },
+      "is_answered": true,
+      "view_count": 98,
+      "accepted_answer_id": 55892472,
+      "answer_count": 1,
+      "score": 4,
+      "last_activity_date": 1556469907,
+      "creation_date": 1556469328,
+      "last_edit_date": 1556469583,
+      "question_id": 55892372,
+      "link": "https://stackoverflow.com/questions/55892372/unable-to-call-manually-call-destructor-for-stdstring",
+      "title": "Unable to call manually call destructor for std::string"
+    },
+    {
+      "tags": [
+        "c++",
+        "templates",
+        "vector",
+        "stl"
+      ],
+      "owner": {
+        "reputation": 177,
+        "user_id": 2721822,
+        "user_type": "registered",
+        "accept_rate": 95,
+        "profile_image": "https://i.stack.imgur.com/Sn6dE.png?s=128&g=1",
+        "display_name": "Hani Gotc",
+        "link": "https://stackoverflow.com/users/2721822/hani-gotc"
+      },
+      "is_answered": true,
+      "view_count": 45,
+      "accepted_answer_id": 55900012,
+      "answer_count": 3,
+      "score": 3,
+      "last_activity_date": 1556536744,
+      "creation_date": 1556528281,
+      "last_edit_date": 1556528473,
+      "question_id": 55899973,
+      "link": "https://stackoverflow.com/questions/55899973/template-function-that-uses-n-copy-to-copy-first-n-elements-form-one-vector-anot",
+      "title": "template function that uses n_copy to copy first n elements form one vector another causing a compilation error"
+    },
+    {
+      "tags": [
+        "c++"
+      ],
+      "owner": {
+        "reputation": 18,
+        "user_id": 11420003,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/OCC2Y.jpg?s=128&g=1",
+        "display_name": "Resha Lian",
+        "link": "https://stackoverflow.com/users/11420003/resha-lian"
+      },
+      "is_answered": true,
+      "view_count": 35,
+      "accepted_answer_id": 55894621,
+      "answer_count": 1,
+      "score": 3,
+      "last_activity_date": 1556486067,
+      "creation_date": 1556485762,
+      "last_edit_date": 1556486067,
+      "question_id": 55894597,
+      "link": "https://stackoverflow.com/questions/55894597/how-to-adjust-the-likelihood-of-a-roll",
+      "title": "How to adjust the Likelihood Of A Roll"
+    },
+    {
+      "tags": [
+        "c++",
+        "namespaces",
+        "language-lawyer",
+        "typedef",
+        "ambiguous"
+      ],
+      "owner": {
+        "reputation": 106911,
+        "user_id": 1505939,
+        "user_type": "registered",
+        "accept_rate": 52,
+        "profile_image": "https://www.gravatar.com/avatar/131c67ef492a8d8352c6cf642a52e20f?s=128&d=identicon&r=PG",
+        "display_name": "M.M",
+        "link": "https://stackoverflow.com/users/1505939/m-m"
+      },
+      "is_answered": true,
+      "view_count": 57,
+      "answer_count": 1,
+      "score": 3,
+      "last_activity_date": 1556520126,
+      "creation_date": 1556511010,
+      "question_id": 55896837,
+      "link": "https://stackoverflow.com/questions/55896837/same-name-in-typedef-and-using-from-a-namespace",
+      "title": "Same name in typedef and using from a namespace"
+    },
+    {
+      "tags": [
+        "c++",
+        "gcc",
+        "argument-dependent-lookup",
+        "friend-function"
+      ],
+      "owner": {
+        "reputation": 92,
+        "user_id": 6194382,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/31d558d74f41327252b475724eaf51bf?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Andy G",
+        "link": "https://stackoverflow.com/users/6194382/andy-g"
+      },
+      "is_answered": true,
+      "view_count": 48,
+      "accepted_answer_id": 55890620,
+      "answer_count": 3,
+      "score": 3,
+      "last_activity_date": 1556457282,
+      "creation_date": 1556445039,
+      "question_id": 55889042,
+      "link": "https://stackoverflow.com/questions/55889042/how-to-fix-previously-working-injected-template-friend-function",
+      "title": "How to fix previously-working injected template friend function?"
+    },
+    {
+      "tags": [
+        "c++",
+        "templates",
+        "language-lawyer"
+      ],
+      "owner": {
+        "reputation": 146,
+        "user_id": 5511356,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/977f55700836195346dde172624580d2?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Matthew Busche",
+        "link": "https://stackoverflow.com/users/5511356/matthew-busche"
+      },
+      "is_answered": true,
+      "view_count": 87,
+      "accepted_answer_id": 55888899,
+      "answer_count": 2,
+      "score": 3,
+      "last_activity_date": 1556448335,
+      "creation_date": 1556441338,
+      "last_edit_date": 1556442523,
+      "question_id": 55888570,
+      "link": "https://stackoverflow.com/questions/55888570/safe-to-reference-a-c-template-type-having-a-template-parameter-thats-not-com",
+      "title": "Safe to reference a C++ template type having a template parameter that&#39;s not compatible with the template?"
+    },
+    {
+      "tags": [
+        "c++",
+        "lambda"
+      ],
+      "owner": {
+        "reputation": 81,
+        "user_id": 1742297,
+        "user_type": "registered",
+        "accept_rate": 71,
+        "profile_image": "https://www.gravatar.com/avatar/e605fc8808fe1f7dda86aa86548dd21d?s=128&d=identicon&r=PG",
+        "display_name": "ericcire",
+        "link": "https://stackoverflow.com/users/1742297/ericcire"
+      },
+      "is_answered": false,
+      "view_count": 56,
+      "answer_count": 3,
+      "score": 3,
+      "last_activity_date": 1556422054,
+      "creation_date": 1556411242,
+      "question_id": 55886009,
+      "link": "https://stackoverflow.com/questions/55886009/why-define-a-lambda-function-that-return-a-struct-instead-of-defining-the-struct",
+      "title": "Why define a lambda function that return a struct instead of defining the struct directly?"
+    },
+    {
+      "tags": [
+        "c++",
+        "arrays",
+        "constructor",
+        "initialization",
+        "constexpr"
+      ],
+      "owner": {
+        "reputation": 4993,
+        "user_id": 157344,
+        "user_type": "registered",
+        "accept_rate": 53,
+        "profile_image": "https://www.gravatar.com/avatar/b403786b380b1b5a1ed25f144df103e6?s=128&d=identicon&r=PG",
+        "display_name": "Freddie Chopin",
+        "link": "https://stackoverflow.com/users/157344/freddie-chopin"
+      },
+      "is_answered": true,
+      "view_count": 47,
+      "answer_count": 1,
+      "score": 2,
+      "last_activity_date": 1556533124,
+      "creation_date": 1556525595,
+      "last_edit_date": 1556528912,
+      "question_id": 55899328,
+      "link": "https://stackoverflow.com/questions/55899328/constexpr-initialization-of-an-array-of-non-copyable-objects",
+      "title": "Constexpr initialization of an array of non-copyable objects?"
+    },
+    {
+      "tags": [
+        "c++",
+        "sfml"
+      ],
+      "owner": {
+        "reputation": 26,
+        "user_id": 10778157,
+        "user_type": "registered",
+        "profile_image": "https://lh6.googleusercontent.com/-ZzGZE6iU_vo/AAAAAAAAAAI/AAAAAAAAAJA/gNYihj9X5Jo/photo.jpg?sz=128",
+        "display_name": "Ryan Farrell",
+        "link": "https://stackoverflow.com/users/10778157/ryan-farrell"
+      },
+      "is_answered": true,
+      "view_count": 31,
+      "accepted_answer_id": 55896901,
+      "answer_count": 1,
+      "score": 2,
+      "last_activity_date": 1556511503,
+      "creation_date": 1556511166,
+      "question_id": 55896856,
+      "link": "https://stackoverflow.com/questions/55896856/window-not-opening-in-sfml",
+      "title": "Window not opening in SFML"
+    },
+    {
+      "tags": [
+        "c++",
+        "makefile"
+      ],
+      "owner": {
+        "reputation": 23,
+        "user_id": 11344930,
+        "user_type": "registered",
+        "profile_image": "https://lh6.googleusercontent.com/-AHl-oXJAn3o/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcjfXhlLepr_oc_2Pk1Q0mkJYs2eg/mo/photo.jpg?sz=128",
+        "display_name": "user11344930",
+        "link": "https://stackoverflow.com/users/11344930/user11344930"
+      },
+      "is_answered": true,
+      "view_count": 31,
+      "answer_count": 1,
+      "score": 2,
+      "last_activity_date": 1556509748,
+      "creation_date": 1556509190,
+      "question_id": 55896658,
+      "link": "https://stackoverflow.com/questions/55896658/do-the-flags-get-called-when-i-make-this-program",
+      "title": "Do the flags get called when I make this program?"
+    },
+    {
+      "tags": [
+        "c++",
+        "templates",
+        "template-meta-programming",
+        "sfinae",
+        "explicit"
+      ],
+      "owner": {
+        "reputation": 1582,
+        "user_id": 9716597,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/7f97c613dca0b157b40551a0d756abeb?s=128&d=identicon&r=PG&f=1",
+        "display_name": "L. F.",
+        "link": "https://stackoverflow.com/users/9716597/l-f"
+      },
+      "is_answered": true,
+      "view_count": 41,
+      "accepted_answer_id": 55889695,
+      "answer_count": 1,
+      "score": 2,
+      "last_activity_date": 1556450928,
+      "creation_date": 1556448686,
+      "last_edit_date": 1556449031,
+      "question_id": 55889517,
+      "link": "https://stackoverflow.com/questions/55889517/how-can-i-apply-make-a-default-constructor-conditionally-explicit",
+      "title": "How can I apply make a default constructor conditionally explicit?"
+    },
+    {
+      "tags": [
+        "java",
+        "c++",
+        "algorithm",
+        "sorting"
+      ],
+      "owner": {
+        "reputation": 41,
+        "user_id": 5835694,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/5ca45f8838e2571831775c2c83514bee?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Loc Truong",
+        "link": "https://stackoverflow.com/users/5835694/loc-truong"
+      },
+      "is_answered": true,
+      "view_count": 129,
+      "answer_count": 2,
+      "score": 2,
+      "last_activity_date": 1556524463,
+      "creation_date": 1556433233,
+      "last_edit_date": 1556524463,
+      "question_id": 55887651,
+      "link": "https://stackoverflow.com/questions/55887651/multiplying-every-element-of-one-array-by-every-element-of-another-array-and-sor",
+      "title": "Multiplying every element of one array by every element of another array and sort the new very large array"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11"
+      ],
+      "owner": {
+        "reputation": 11,
+        "user_id": 10967142,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/d3ea0a1f1057f655bc0cce9d095d33f9?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Harsh",
+        "link": "https://stackoverflow.com/users/10967142/harsh"
+      },
+      "is_answered": true,
+      "view_count": 32,
+      "answer_count": 3,
+      "score": 2,
+      "last_activity_date": 1556428852,
+      "creation_date": 1556423004,
+      "last_edit_date": 1556428852,
+      "question_id": 55886826,
+      "link": "https://stackoverflow.com/questions/55886826/overload-resolution-doesnt-choose-template-when-arguments-are-different",
+      "title": "Overload resolution doesn&#39;t choose template when arguments are different"
+    },
+    {
+      "tags": [
+        "c++",
+        "io"
+      ],
+      "owner": {
+        "reputation": 14,
+        "user_id": 11425152,
+        "user_type": "registered",
+        "profile_image": "https://lh4.googleusercontent.com/-9CYGcyPdB5Y/AAAAAAAAAAI/AAAAAAAAPLg/acLmFweB0qI/photo.jpg?sz=128",
+        "display_name": "Kayra",
+        "link": "https://stackoverflow.com/users/11425152/kayra"
+      },
+      "is_answered": true,
+      "view_count": 59,
+      "answer_count": 1,
+      "score": 2,
+      "last_activity_date": 1556521556,
+      "creation_date": 1556511672,
+      "last_edit_date": 1556521556,
+      "question_id": 55896918,
+      "link": "https://stackoverflow.com/questions/55896918/how-to-input-strings-that-start-with-special-characters",
+      "title": "How to input strings that start with special characters"
+    },
+    {
+      "tags": [
+        "c++",
+        "class",
+        "oop"
+      ],
+      "owner": {
+        "reputation": 23,
+        "user_id": 10148405,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/b1c7214bb5b605503d55968012587601?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Shivam Jha",
+        "link": "https://stackoverflow.com/users/10148405/shivam-jha"
+      },
+      "is_answered": true,
+      "view_count": 55,
+      "accepted_answer_id": 55889783,
+      "answer_count": 1,
+      "score": 2,
+      "last_activity_date": 1556453298,
+      "creation_date": 1556448193,
+      "last_edit_date": 1556449138,
+      "question_id": 55889451,
+      "link": "https://stackoverflow.com/questions/55889451/how-do-i-make-a-function-of-a-namespace-inaccessible-by-the-client-side",
+      "title": "How do I make a function of a namespace inaccessible by the client side"
+    },
+    {
+      "tags": [
+        "c++"
+      ],
+      "owner": {
+        "reputation": 13,
+        "user_id": 11421627,
+        "user_type": "registered",
+        "profile_image": "https://lh4.googleusercontent.com/-bfjfraB-a1A/AAAAAAAAAAI/AAAAAAAAAAA/ACHi3rcnBOada6Zjq6va9_jsP-W-DDNTFw/mo/photo.jpg?sz=128",
+        "display_name": "YR007",
+        "link": "https://stackoverflow.com/users/11421627/yr007"
+      },
+      "is_answered": true,
+      "view_count": 29,
+      "accepted_answer_id": 55887167,
+      "answer_count": 1,
+      "score": 2,
+      "last_activity_date": 1556427656,
+      "creation_date": 1556421967,
+      "question_id": 55886765,
+      "link": "https://stackoverflow.com/questions/55886765/how-can-i-display-elements-in-the-linked-list-without-using-function-in-c",
+      "title": "How can I display elements in the linked list without using function in C++?"
+    },
+    {
+      "tags": [
+        "c++"
+      ],
+      "owner": {
+        "reputation": 21,
+        "user_id": 10529876,
+        "user_type": "registered",
+        "profile_image": "https://www.gravatar.com/avatar/2593f25a1d0766edfa1c90d4f745beb3?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Alvin_Kirin",
+        "link": "https://stackoverflow.com/users/10529876/alvin-kirin"
+      },
+      "is_answered": false,
+      "view_count": 82,
+      "answer_count": 2,
+      "score": 2,
+      "last_activity_date": 1556447860,
+      "creation_date": 1556429708,
+      "last_edit_date": 1556429808,
+      "question_id": 55887326,
+      "link": "https://stackoverflow.com/questions/55887326/no-match-for-operator-isnt-it-the-type-dont-match-and-why",
+      "title": "no match for &#39;operator==&#39; isn&#39;t it the type don&#39;t match and why?"
+    },
+    {
+      "tags": [
+        "c++",
+        "directx",
+        "directx-11",
+        "dxgi"
+      ],
+      "owner": {
+        "reputation": 13,
+        "user_id": 10766071,
+        "user_type": "registered",
+        "profile_image": "https://lh4.googleusercontent.com/-hy9Hfimmap8/AAAAAAAAAAI/AAAAAAAAACc/ZbwJyYho7L0/photo.jpg?sz=128",
+        "display_name": "KidCozy",
+        "link": "https://stackoverflow.com/users/10766071/kidcozy"
+      },
+      "is_answered": true,
+      "view_count": 38,
+      "accepted_answer_id": 55887571,
+      "answer_count": 1,
+      "score": 2,
+      "last_activity_date": 1556450406,
+      "creation_date": 1556424791,
+      "last_edit_date": 1556450406,
+      "question_id": 55886967,
+      "link": "https://stackoverflow.com/questions/55886967/getting-multiple-screen-buffers-from-swap-chain",
+      "title": "Getting multiple screen buffers from swap-chain"
+    },
+    {
+      "tags": [
+        "c++",
+        "c++11",
+        "templates"
+      ],
+      "owner": {
+        "reputation": 348,
+        "user_id": 4089301,
+        "user_type": "registered",
+        "accept_rate": 71,
+        "profile_image": "https://www.gravatar.com/avatar/33ab191ba11b3c63707de59f80dc0e22?s=128&d=identicon&r=PG&f=1",
+        "display_name": "Tony",
+        "link": "https://stackoverflow.com/users/4089301/tony"
+      },
+      "is_answered": false,
+      "view_count": 40,
+      "answer_count": 1,
+      "score": 2,
+      "last_activity_date": 1556426134,
+      "creation_date": 1556422298,
+      "last_edit_date": 1556424428,
+      "question_id": 55886786,
+      "link": "https://stackoverflow.com/questions/55886786/could-not-infer-template-argument-when-using-typename-containervalue-type-as",
+      "title": "Could not infer template argument when using &quot;typename Container::value_type&quot; as the return value"
+    },
+    {
+      "tags": [
+        "c++",
+        "io",
+        "fstream"
+      ],
+      "owner": {
+        "reputation": 11,
+        "user_id": 10215069,
+        "user_type": "registered",
+        "profile_image": "https://lh3.googleusercontent.com/-asRNlg2DLIM/AAAAAAAAAAI/AAAAAAAAAAo/O2sOvfr9q0c/photo.jpg?sz=128",
+        "display_name": "Kirill Qumorion",
+        "link": "https://stackoverflow.com/users/10215069/kirill-qumorion"
+      },
+      "is_answered": false,
+      "view_count": 34,
+      "closed_date": 1556457482,
+      "answer_count": 2,
+      "score": 2,
+      "last_activity_date": 1556455202,
+      "creation_date": 1556448812,
+      "last_edit_date": 1556450823,
+      "question_id": 55889533,
+      "link": "https://stackoverflow.com/questions/55889533/i-cant-write-to-a-file-right-after-reading-it-using-fstream",
+      "closed_reason": "duplicate",
+      "title": "I can&#39;t write to a file right after reading it using fstream"
+    },
+    {
+      "tags": [
+        "c++",
+        "c"
+      ],
+      "owner": {
+        "reputation": 8,
+        "user_id": 7904405,
+        "user_type": "registered",
+        "profile_image": "https://i.stack.imgur.com/AeNGl.jpg?s=128&g=1",
+        "display_name": "Syauqi",
+        "link": "https://stackoverflow.com/users/7904405/syauqi"
+      },
+      "is_answered": true,
+      "view_count": 55,
+      "answer_count": 4,
+      "score": 1,
+      "last_activity_date": 1556539528,
+      "creation_date": 1556537642,
+      "question_id": 55902494,
+      "link": "https://stackoverflow.com/questions/55902494/the-explanation-behind-the-code-if-im-using-s-instead-of-c-in-my-printf-secti",
+      "title": "The explanation behind the code if i&#39;m using %s instead of %c in my printf section of the code"
+    }
+  ],
+  "has_more": true,
+  "quota_max": 10000,
+  "quota_remaining": 9880
+}
+
