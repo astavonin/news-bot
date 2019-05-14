@@ -1,44 +1,15 @@
-# news-bot
 
-FIXME: description
+# Testing
 
-## Installation
+* _twitter.edn file should contain Twitter credentials as END record:
+```clojure
+{:AppKey "_APP_KEY_",
+ :AppSecret "_APP_SECRET_",
+ :UserToken "_USER_TOKEN_",
+ :UserTokenSecret "_USER_TOKEN_SECRET_"}
+```
 
-Download from http://example.com/FIXME.
-
-## Usage
-
-FIXME: explanation
-
-    $ java -jar news-bot-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2019 FIXME
-
-This program and the accompanying materials are made available under the
-terms of the Eclipse Public License 2.0 which is available at
-http://www.eclipse.org/legal/epl-2.0.
-
-This Source Code may also be made available under the following Secondary
-Licenses when the conditions for such availability set forth in the Eclipse
-Public License, v. 2.0 are satisfied: GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or (at your
-option) any later version, with the GNU Classpath Exception which is available
-at https://www.gnu.org/software/classpath/license.html.
+* [LocalStack](https://localstack.cloud/) should be available as Docker image `localstack/localstack`.
+```bash
+docker run -d -e "SERVICES=s3" -p 4572:4572 --name news-bot-localstack localstack/localstack
+```

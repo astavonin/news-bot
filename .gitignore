@@ -180,3 +180,5 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+# credentals for local development
+_*.edn

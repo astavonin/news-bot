@@ -26,18 +26,18 @@
   )
 
 (deftest so-data-parsing
-  (with-redefs [load-thread (fn [tag _] (load-by-tag tag))]
+  (with-redefs [load-thread (fn [tag _ _] (load-by-tag tag))]
 
     (testing "StackOverflow feed should be parsed"
-      (is (seq? (read-feed-on ["c++"] (t/now))))
+      (is (seq? (read-feed-on ["c++"] (t/now) 12)))
 
-      (is (= (count (read-feed-on ["c++"] (t/now))) 30))
-      (is (= (count (read-feed-on ["c++11"] (t/now))) 15))
-      (is (= (count (read-feed-on ["c++20"] (t/now))) 0))
-      (is (= (count (read-feed-on ["c++" "c++11" "c++20"] (t/now))) 45))
+      (is (= (count (read-feed-on ["c++"] (t/now) 12)) 30))
+      (is (= (count (read-feed-on ["c++11"] (t/now) 12)) 15))
+      (is (= (count (read-feed-on ["c++20"] (t/now) 12)) 0))
+      (is (= (count (read-feed-on ["c++" "c++11" "c++20"] (t/now) 12)) 45))
       )
     (testing "StackOverflow data record structure"
-      (let [rec (first (read-feed-on ["c++"] (t/now)))]
+      (let [rec (first (read-feed-on ["c++"] (t/now) 12))]
         (has-keys rec #{:view_count
                         :tags
                         :last_edit_date
