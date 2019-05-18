@@ -43,18 +43,3 @@
       ready
       )
     ))
-
-;(let [id (start-stack)]
-;  (if (wait-for-stack? id 30)
-;    (do
-;      (log/debug "LocalStack successfully removed" (remove-stack id))
-;      )
-;    (log/error "LocalStack is not ready in 30s.")
-;    )
-;  )
-
-;(def id (start-stack))
-;(docker/stop conn id)
-;(docker/inspect conn id)
-;(is-stack-ready? id)
-;(remove-stack id)

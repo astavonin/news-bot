@@ -1,8 +1,8 @@
 (ns news-bot.data-provider-test
   (:require [clojure.test :refer :all]
-            [news-bot.data-provider :refer :all]
+            [news-bot.sources.so :refer :all]
             [clj-time.core :as t]
-            [clojure.data :as d]
+            [news-bot.test-utils :refer :all]
             )
   )
 
@@ -12,17 +12,6 @@
                                        "c++11" "cpp11.json"
                                        "c++17" "cpp17.json"
                                        "c++20" "cpp20.json")))
-  )
-
-(defn- get-keys [rec]
-  (set (keys rec)))
-
-(defn- has-keys [rec keys]
-  (is (map? rec))
-  (let [[l r _] (d/diff (get-keys rec) keys)]
-    (is (nil? l))
-    (is (nil? r))
-    )
   )
 
 (deftest so-data-parsing
@@ -44,9 +33,9 @@
                         :answer_count
                         :last_activity_date
                         :title
+                        :score
                         :creation_date
                         :link
-                        :score
                         :accepted_answer_id
                         :is_answered
                         :question_id
@@ -62,10 +51,10 @@
         (is (seq? top-news))
 
         (has-keys top-one #{:tags
-                            :title
+                            :id
                             :score
+                            :title
                             :link})
-        (is (= (top-one :score) 10))
         )
       )
     )

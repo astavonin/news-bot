@@ -16,6 +16,7 @@
                  [lispyclouds/clj-docker-client "0.2.3"]
                  [com.taoensso/nippy "2.14.0"]
                  [slingshot "0.12.2"]
+                 [hickory "0.7.1"]
                  ]
   :main ^:skip-aot news-bot.core
   :target-path "target/%s"
