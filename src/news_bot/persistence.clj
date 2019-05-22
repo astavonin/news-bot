@@ -24,16 +24,25 @@
 ; -----------------------
 ; S3 implementation
 ; -----------------------
-(defn set-aws-endpoint [& endpoint-override]
-  (let [override+ #(if (some? endpoint-override)
-                     (assoc % :endpoint-override (first endpoint-override))
-                     %)
-        s3-config (override+ {:api :s3})
-        sm-config (override+ {:api :secretsmanager})]
-    (reset! s3 (aws/client s3-config))
-    (reset! sm (aws/client sm-config))
-    )
-  )
+(defn gen-endpoint-info [service env-type]
+  (let [port (case service
+               :s3 4572
+               :secretsmanager 4584)]
+    (case env-type
+      :localstack {:api               service
+                    :endpoint-override {:protocol :http
+                                        :hostname "localhost"
+                                        :port     port}}
+      :aws {:api service})))
+
+(defn set-aws-endpoint [& {:keys [env-type]
+                           :or   {env-type {:s3             :aws
+                                            :secretsmanager :aws}}}]
+  (run! #(let [[service dest] %]
+           (case service
+             :s3 (reset! s3 (aws/client (gen-endpoint-info service dest)))
+             :secretsmanager (reset! sm (aws/client (gen-endpoint-info service dest)))))
+        env-type))
 
 (defmacro checked-s3-invoke [keys]
   `(let [response# (aws/invoke @s3 ~keys)]
@@ -49,7 +58,6 @@
                                 :CreateBucketConfiguration
                                         {:LocationConstraint location}}}))
 
-
 (defn delete-all-objects [bucket]
   (let [objects (into [] (map #(let [val (% :Key)] {:Key val})
                               ((checked-s3-invoke {:op      :ListObjects
@@ -63,14 +71,14 @@
   (checked-s3-invoke {:op      :DeleteBucket
                       :request {:Bucket name}}))
 
-(defn store-data [bucket data & {:keys [source destination]
-                                 :or   {source      :so
-                                        destination :twitter}}]
+(defn store-data [bucket source data & {:keys [destination]
+                                 :or   {destination :twitter}}]
   {:pre [(s/valid? ::news-list data)
-         (s/valid? string? bucket)]}
+         (s/valid? string? bucket)
+         (s/valid? keyword? source) (s/valid? keyword? destination)]}
 
-  (let [key  (str/join "/" [(name source) (name destination)])
-        body (io/input-stream (nippy/freeze data))]
+  (let [key  (str/join "/" [(name destination) (name source)])
+        body (io/input-stream (nippy/freeze (set data)))]
     (checked-s3-invoke {:op      :PutObject
                         :request {:Bucket bucket :Key key :Body body}})))
 
@@ -79,12 +87,13 @@
     (io/copy is baos)
     (.toByteArray baos)))
 
-(defn load-data [bucket & {:keys [source destination]
-                           :or   {source      :so
-                                  destination :twitter}}]
-  {:post [(s/valid? ::news-list %)]}
+(defn load-data [bucket source & {:keys [ destination]
+                           :or   {destination :twitter}}]
+  {:pre [(s/valid? string? bucket)
+         (s/valid? keyword? source)]
+   :post [(s/valid? ::news-list %)]}
 
-  (let [key      (str/join "/" [(name source) (name destination)])
+  (let [key      (str/join "/" [(name destination) (name source)])
         raw-data (checked-s3-invoke {:op      :GetObject
                                      :request {:Bucket bucket :Key key}})]
     (-> (raw-data :Body)
@@ -102,10 +111,32 @@
                                                :data     (or (response# :Error) response#)}))
        response#)))
 
-(defn load-twitter-cred []
-  {:post [(s/valid? ::twitter-cred %)]}
+(defn load-twitter-cred [cred-id]
+  {:pre [(s/valid? not-empty cred-id)]
+   :post [(s/valid? ::twitter-cred %)]}
 
   (-> (checked-sm-invoke {:op      :GetSecretValue
-                          :request {:SecretId "twitter/cpp_news_bot"}})
+                          :request {:SecretId cred-id}})
       (:SecretString)
-      (json/read-json)))
+      (json/read-str :key-fn keyword)))
+
+;;;;; LocalStack has issues with SecretManager
+
+;(set-aws-endpoint :env-type {:secretsmanager :localstack})
+
+;(set-aws-endpoint)
+;(aws/ops @sm)
+;(load-twitter-cred)
+
+;(aws/doc @sm :PutSecretValue)
+;(aws/ops @sm)
+
+;(aws/invoke @sm {:op :ListSecrets})
+;(aws/invoke @sm {:op      :GetSecretValue :request {:SecretId "twitter/cpp_news_bot"}})
+
+;(aws/invoke @sm {:op      :PutSecretValue
+;                 :request {:SecretId     "twitter/cpp_news_bot"
+;                           :SecretString (json/write-str {:AppKey          "AAA",
+;                                                          :AppSecret       "BBB",
+;                                                          :UserToken       "CCC",
+;                                                          :UserTokenSecret "DDD"})}})

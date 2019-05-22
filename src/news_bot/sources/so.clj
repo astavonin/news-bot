@@ -8,8 +8,7 @@
             [slingshot.slingshot :refer [throw+ try+]]
             [taoensso.timbre :as log]
             [clojure.spec.alpha :as s]
-            [news-bot.sources.interface :as i])
-  )
+            [news-bot.sources.interface :as i]))
 
 
 (def so-api-endpoint "https://api.stackexchange.com")
@@ -34,7 +33,7 @@
         (log/error "HTTP 400 for tag" tag body)
         "{}")
       (catch Object _
-        (log/error "unable to load thread for tag" tag (:message &throw-context))
+        (log/error "unable to load SO thread for tag" tag (:message &throw-context))
         "{}"))))
 
 (defn clean-html [text]
@@ -93,7 +92,8 @@
                                                      :month (* 24 30)
                                                      :year (* 24 365)
                                                      24))]
-      (map (fn [n] (update n :title #(format header %))) news))))
+      (map (fn [n] (update n :title #(format header %))) news)))
+  (id [_] :so))
 
 (defn get-data-provider [count period]
   {:post [(s/valid? ::i/data-provider %)]}

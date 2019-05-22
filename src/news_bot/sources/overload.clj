@@ -35,15 +35,30 @@
   (let [page (-> (load-overload-main-page)
                  hc/parse
                  hc/as-hickory)]
-    (if-let [journals (extract-journals-list page)]
-      (map #(assoc % :tags ["overload"]) (parse-journals journals))
-      [])))
+    (let [journals (extract-journals-list page)]
+      (map #(assoc % :tags ["overload" "cpp" "accu"]) (parse-journals journals)))))
 
-(defrecord OverloadDataProvider [count] i/DataProvider
+(defrecord OverloadDataProvider [count already-posted] i/DataProvider
   (load-news [_]
-    (let [header "New %s is available!"
-          journals (take count (sort-by :id #(compare %2 %1) (load-journal-list)))]
-      (map (fn [n] (update n :title #(format header %))) journals))))
+    (let [header     "New %s is available!"
+          journals   (take count (sort-by :id #(compare %2 %1) (load-journal-list)))
+          max-posted (apply max already-posted)]
+      (if (and (not-empty journals)
+               (< max-posted (:id (first journals))))
+        (map (fn [n] (update n :title #(format header %))) journals)
+        ())))
+  (id [_] :overload))
 
-;(def dp (OverloadDataProvider. 1))
-;(i/load-news dp)
+(defn get-data-provider [already-posted]
+  {:post [(s/valid? ::i/data-provider %)]}
+
+  (OverloadDataProvider. 1 (if (not-empty already-posted)
+                             already-posted
+                             [0])))
+
+;(def dp (get-data-provider []))
+;
+;(try
+;  (i/load-news dp)
+;  (catch Exception e
+;    (println e)))

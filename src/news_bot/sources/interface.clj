@@ -14,6 +14,7 @@
 
 (defprotocol DataProvider
   (load-news [this])
+  (id [this])
   )
 
 (s/def ::data-provider #(satisfies? DataProvider %))

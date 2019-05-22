@@ -29,6 +29,28 @@
       (let [journals (load-journal-list)]
         (is (= 149 (count journals)))
         (has-keys (first journals) #{:id :link :title :tags}))
-        )))
+      )))
+
+(deftest data-provider-test
+  (with-redefs [load-overload-main-page (fn [] (slurp overload-page))]
+    (let [dp (get-data-provider [])
+          news (i/load-news dp)]
+      (is (not-empty news))
+      (is (s/valid? ::i/posts-coll news))
+      (is (= 150 (:id (first news)))))
+    (let [dp (get-data-provider [150])
+          news (i/load-news dp)]
+      (is (empty? news))
+      (is (s/valid? ::i/posts-coll news))))
+  (let [dp (get-data-provider [])
+        id (i/id dp)]
+    (is (= id :overload))))
+
+(deftest http-errors-test
+  (with-redefs [main-page "https://accu_error.org/index.php/journals/c78/"]
+    (let [dp (get-data-provider [])
+          news (i/load-news dp)]
+      (is (empty? news))
+      (is (s/valid? ::i/posts-coll news)))))
 
 ;(run-tests 'news-bot.overload-test)

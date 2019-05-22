@@ -1,18 +1,15 @@
-(ns news-bot.data-provider-test
+(ns news-bot.so-test
   (:require [clojure.test :refer :all]
             [news-bot.sources.so :refer :all]
             [clj-time.core :as t]
-            [news-bot.test-utils :refer :all]
-            )
-  )
+            [news-bot.test-utils :refer :all]))
 
 (defn- load-by-tag [tag]
   (slurp (str "test/data/questions/" (case tag
                                        "c++" "cpp.json"
                                        "c++11" "cpp11.json"
                                        "c++17" "cpp17.json"
-                                       "c++20" "cpp20.json")))
-  )
+                                       "c++20" "cpp20.json"))))
 
 (deftest so-data-parsing
   (with-redefs [load-thread (fn [tag _ _] (load-by-tag tag))]
@@ -54,8 +51,4 @@
                             :id
                             :score
                             :title
-                            :link})
-        )
-      )
-    )
-  )
+                            :link})))))

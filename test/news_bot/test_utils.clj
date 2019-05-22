@@ -13,3 +13,10 @@
     (is (nil? r))
     )
   )
+
+(defmacro exception-info [& function]
+  `(try
+     ~function
+     (catch Exception err#
+       (ex-data err#)))
+  )
