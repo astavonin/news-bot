@@ -6,8 +6,6 @@
             [news-bot.sources.interface :as i]
             [clojure.spec.alpha :as s]))
 
-(def overload-page "test/data/overload/overload.html")
-
 (deftest parse-journals-test
   (testing "journal information extraction"
     (let [page  (-> (slurp overload-page)

@@ -2,10 +2,10 @@
   (:gen-class)
   (:require [news-bot.publisher :as pub]
             [clj-time.core :as time]
-            [news-bot.config :as config]))
+            [news-bot.config :as conf]))
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (pub/publish-updates (config/config :storage-bucket) (time/now)))
+  (pub/publish-updates (conf/config :storage-bucket) (time/now)))
 

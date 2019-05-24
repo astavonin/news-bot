@@ -1,7 +1,7 @@
 (ns news-bot.sources.so
   (:require [clojure.data.json :as json]
             [clj-time.coerce :as tc]
-            [clj-time.core :as t]
+            [clj-time.core :as time]
             [clj-time.format :as tf]
             [clojure.string :as str]
             [clj-http.client :as http]
@@ -20,7 +20,7 @@
 (def so-cpp-tags ["c++" "c++11" "c++17" "c++20"])
 
 (defn load-thread [tag on-date period]
-  (let [from-date (t/minus on-date (t/hours period))
+  (let [from-date (time/minus on-date (time/hours period))
         to-date   on-date]
     (log/debug "loading questions for" tag "on" on-date "with period" period "hours")
     (try+
@@ -70,37 +70,46 @@
 
 (defn get-so-news
   [& {:keys [count on-date period] :or {count   3
-                                        on-date (t/now)
+                                        on-date (time/now)
                                         period  24}}]
   {:post [(s/valid? ::i/posts-coll %)]}
   (map #(-> %
             (select-keys [:tags :question_id :title :score :link])
             (clojure.set/rename-keys {:question_id :id}))
-       (take count (sort-by :score #(compare %2 %1) (cpp-feed (t/now) period)))))
+       (take count (sort-by :score #(compare %2 %1) (cpp-feed (time/now) period)))))
 
-(defn build-header [period]
+(defn build-header [period date]
   (case period
-    :month (tf/unparse (tf/formatter "MMMM") (t/now))
-    :year (str "the " (t/year (t/now)))
+    :month (tf/unparse (tf/formatter "MMMM") date)
+    :year (str "the " (time/year date))
     (str "the " (name period))))
 
-(defrecord SODataProvider [count period] i/DataProvider
+(defrecord SODataProvider [load-count period] i/DataProvider
   (load-news [_]
-    (let [header (str "SO post of " (build-header period) ": \"%s\"")
-          news   (get-so-news :count count :period (case period
-                                                     :week (* 24 7)
-                                                     :month (* 24 30)
-                                                     :year (* 24 365)
-                                                     24))]
-      (map (fn [n] (update n :title #(format header %))) news)))
+    (let [header     (str "%sSO post of " (build-header period (time/now)) ": \"%s\"")
+          news       (get-so-news :count load-count :period (case period
+                                                              :week (* 24 7)
+                                                              :month (* 24 30)
+                                                              :year (* 24 365)
+                                                              24))
+          news-count (count news)]
+      (map-indexed (fn [pos val] (let [prefix (if (< 1 news-count)
+                                                (format "%d/%d: " (inc pos) news-count)
+                                                "")]
+                                   (update val :title #(format header prefix %)))) news)))
   (id [_] :so))
 
 (defn get-data-provider [count period]
-  {:post [(s/valid? ::i/data-provider %)]}
+  {:pre  [(s/valid? pos-int? count)
+          (s/valid? keyword? period)]
+   :post [(s/valid? ::i/data-provider %)]}
   (SODataProvider. count period)
   )
 
-;(def dp (SODataProvider. 3 :month))
-;(i/load-news dp)
-;(s/explain ::i/data-provider dp)
-
+;(def dp (SODataProvider. 3 :day))
+;
+;(:period dp)
+;(try
+;  (i/load-news dp)
+;  (catch Exception e
+;    (println e)))

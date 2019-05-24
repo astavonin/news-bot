@@ -11,7 +11,7 @@
 ; in/out data data validators
 ; -----------------------
 (s/def ::news-id int?)
-(s/def ::news-list (s/coll-of ::news-id))
+(s/def ::news-list (s/coll-of ::news-id :kind set?))
 (s/def ::twitter-cred (s/map-of keyword? string?))
 
 ; -----------------------
@@ -87,8 +87,8 @@
     (io/copy is baos)
     (.toByteArray baos)))
 
-(defn load-data [bucket source & {:keys [ destination]
-                           :or   {destination :twitter}}]
+(defn load-data [bucket source & {:keys [destination]
+                           :or          {destination :twitter}}]
   {:pre [(s/valid? string? bucket)
          (s/valid? keyword? source)]
    :post [(s/valid? ::news-list %)]}

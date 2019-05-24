@@ -7,7 +7,7 @@
             [clojure.string :as str]
             [taoensso.timbre :as log]
             [clojure.java.io :as io]
-            [news-bot.config :as config]
+            [news-bot.config :as conf]
             [clojure.edn :as edn]))
 
 (def ^:private cred (atom (let [{app-key           :AppKey
@@ -15,7 +15,7 @@
                                  user-token        :UserToken
                                  user-token-secret :UserTokenSecret}
                                 (try
-                                  (p/load-twitter-cred (config/config :twitter-secret-id))
+                                  (p/load-twitter-cred (conf/config :twitter-secret-id))
                                   (catch Exception e
                                     (log/warn "unable to load twitter credentials from persistence" e)
                                     ; for testing proposes only, because of LocalStack issue
@@ -54,4 +54,4 @@
   {:pre  [(s/valid? ::sources/data-provider update)]
    :post [(s/valid? ::p/news-list %)]}
 
-  (keep post-update (sources/load-news update)))
+  (into #{} (keep post-update (sources/load-news update))))
