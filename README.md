@@ -11,7 +11,7 @@
 
 * [LocalStack](https://localstack.cloud/) should be available as Docker image `localstack/localstack`.
 ```bash
-docker run -d -e "SERVICES=s3,secretsmanager" -p 4572:4572 -p 4584:4584 --name news-bot-localstack localstack/localstack
+docker-compose up
 ```
 
 * For coverage report generation:

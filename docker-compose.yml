@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  localstack:
+    image: localstack/localstack
+    container_name: news-bot-localstack
+    ports:
+      - "4567-4593:4567-4593"
+    environment:
+      SERVICES: "s3,secretsmanager"
