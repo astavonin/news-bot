@@ -17,7 +17,7 @@
   (testing "successful Twitter posting"
     (with-redefs [t/statuses-update (fn [& {:keys [params]}]
                                       (let [text (:status params)]
-                                        (is (str/includes? text "#cpp #cpp11 #just-tag"))
+                                        (is (str/includes? text "#cpp #cpp11 #just_tag"))
                                         (is (str/includes? text "some title"))
                                         (is (str/includes? text "http://foo.boo"))))]
       (let [dp (TestDataProvider. 3)]

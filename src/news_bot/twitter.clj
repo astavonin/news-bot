@@ -36,7 +36,9 @@
     (reset! cred (oauth/make-oauth-creds app-key app-secret user-token user-token-secret))))
 
 (defn- preprocess-tag [tag]
-  (str/replace tag #"c\+\+" "cpp"))
+  (-> tag
+      (str/replace #"c\+\+" "cpp")
+      (str/replace #"-" "_")))
 
 (defn- post-update [rec]
   (let [tags (str/join " " (map #(str "#" (preprocess-tag %)) (rec :tags)))

@@ -1,2 +1,3 @@
-{:storage-bucket "cpp-news-bot"
- :twitter-secret-id "twitter/cpp_news_bot"}
+{:storage-bucket    "cpp-news-bot-singapore"
+ :twitter-secret-id "twitter/cpp_news_bot"
+ :region            "ap-southeast-1"}

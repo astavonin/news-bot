@@ -18,7 +18,8 @@
         (if-not (empty? posted)
           (do
             (p/store-data bucket :so (conj posted-dates day))
-            (log/info "SO update" posted "was successfully posted")))))))
+            (log/info "SO update" posted "was successfully posted"))))
+      (log/debug "we'd already made SO update today" date))))
 
 (defn publish-overload-update [bucket]
   (let [already-posted (try

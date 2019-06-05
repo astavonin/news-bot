@@ -5,7 +5,8 @@
             [clojure.java.io :as io]
             [clojure.string :as str]
             [clojure.spec.alpha :as s]
-            ))
+            [taoensso.timbre :as log]
+            [news-bot.config :as conf]))
 
 ; -----------------------
 ; in/out data data validators
@@ -30,9 +31,9 @@
                :secretsmanager 4584)]
     (case env-type
       :localstack {:api               service
-                    :endpoint-override {:protocol :http
-                                        :hostname "localhost"
-                                        :port     port}}
+                   :endpoint-override {:protocol :http
+                                       :hostname "localhost"
+                                       :port     port}}
       :aws {:api service})))
 
 (defn set-aws-endpoint [& {:keys [env-type]
@@ -52,7 +53,7 @@
        response#)))
 
 (defn create-bucket [name & {:keys [location]
-                             :or   {location "us-west-1"}}]
+                             :or   {location (conf/config :region)}}]
   (checked-s3-invoke {:op      :CreateBucket
                       :request {:Bucket name
                                 :CreateBucketConfiguration
@@ -72,7 +73,7 @@
                       :request {:Bucket name}}))
 
 (defn store-data [bucket source data & {:keys [destination]
-                                 :or   {destination :twitter}}]
+                                        :or   {destination :twitter}}]
   {:pre [(s/valid? ::news-list data)
          (s/valid? string? bucket)
          (s/valid? keyword? source) (s/valid? keyword? destination)]}
@@ -80,7 +81,8 @@
   (let [key  (str/join "/" [(name destination) (name source)])
         body (io/input-stream (nippy/freeze (set data)))]
     (checked-s3-invoke {:op      :PutObject
-                        :request {:Bucket bucket :Key key :Body body}})))
+                        :request {:Bucket bucket :Key key :Body body}})
+    (log/info key "in bucket" bucket "was successfully updated")))
 
 (defn- stream->bytes [is]
   (let [baos (java.io.ByteArrayOutputStream.)]
@@ -88,14 +90,15 @@
     (.toByteArray baos)))
 
 (defn load-data [bucket source & {:keys [destination]
-                           :or          {destination :twitter}}]
-  {:pre [(s/valid? string? bucket)
-         (s/valid? keyword? source)]
+                                  :or   {destination :twitter}}]
+  {:pre  [(s/valid? string? bucket)
+          (s/valid? keyword? source)]
    :post [(s/valid? ::news-list %)]}
 
   (let [key      (str/join "/" [(name destination) (name source)])
         raw-data (checked-s3-invoke {:op      :GetObject
                                      :request {:Bucket bucket :Key key}})]
+    (log/info "loading data for" key "from" bucket)
     (-> (raw-data :Body)
         (stream->bytes)
         (nippy/thaw)
@@ -112,7 +115,7 @@
        response#)))
 
 (defn load-twitter-cred [cred-id]
-  {:pre [(s/valid? not-empty cred-id)]
+  {:pre  [(s/valid? not-empty cred-id)]
    :post [(s/valid? ::twitter-cred %)]}
 
   (-> (checked-sm-invoke {:op      :GetSecretValue
@@ -126,10 +129,10 @@
 
 ;(set-aws-endpoint)
 ;(aws/ops @sm)
-;(load-twitter-cred)
+(load-twitter-cred (conf/config :twitter-secret-id))
 
 ;(aws/doc @sm :PutSecretValue)
-;(aws/ops @sm)
+(aws/ops @sm)
 
 ;(aws/invoke @sm {:op :ListSecrets})
 ;(aws/invoke @sm {:op      :GetSecretValue :request {:SecretId "twitter/cpp_news_bot"}})
