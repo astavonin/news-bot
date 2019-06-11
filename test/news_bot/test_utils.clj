@@ -2,7 +2,8 @@
   (:require [clojure.test :refer :all]
             [clojure.data :as d]
             [news-bot.stack-helper :as helper]
-            [news-bot.persistence :as p]))
+            [news-bot.persistence :as p]
+            [hickory.core :as hc]))
 
 
 (defn get-keys [rec]
@@ -38,5 +39,12 @@
   (p/delete-all-objects bucket-name)
   (p/delete-bucket bucket-name))
 
-(def overload-page "test/data/overload/overload.html")
+
+(defn load-test-page [path]
+  (-> (slurp path)
+      hc/parse
+      hc/as-hickory))
+
+(def overload-test-page "test/data/overload/overload.html")
+(def boost-test-page "test/data/boost/Boost News.htm")
 (def bucket-name "localstack-test-bucket")

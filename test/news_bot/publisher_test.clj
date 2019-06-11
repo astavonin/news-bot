@@ -17,7 +17,7 @@
 
 (deftest publish-overload-update-test
   (let [post-counter (atom 0)]
-    (with-redefs [load-overload-main-page (fn [] (slurp overload-page))
+    (with-redefs [load-overload-main-page (fn [] (slurp overload-test-page))
                   t/statuses-update       (fn [& {:keys [_]}]
                                             (swap! post-counter inc))]
       (publish-overload-update bucket-name)

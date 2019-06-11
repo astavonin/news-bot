@@ -8,9 +8,9 @@
 
 (deftest parse-journals-test
   (testing "journal information extraction"
-    (let [page  (-> (slurp overload-page)
-                    hc/parse
-                    hc/as-hickory)]
+    (let [page (-> (slurp overload-test-page)
+                   hc/parse
+                   hc/as-hickory)]
       (if-let [journals (extract-journals-list page)]
         (do
           (is (not-empty journals))
@@ -23,14 +23,14 @@
 
 (deftest load-journal-list-test
   (testing "load and parse journals"
-    (with-redefs [load-overload-main-page (fn [] (slurp overload-page))]
+    (with-redefs [load-overload-main-page (fn [] (slurp overload-test-page))]
       (let [journals (load-journal-list)]
         (is (= 149 (count journals)))
         (has-keys (first journals) #{:id :link :title :tags}))
       )))
 
 (deftest data-provider-test
-  (with-redefs [load-overload-main-page (fn [] (slurp overload-page))]
+  (with-redefs [load-overload-main-page (fn [] (slurp overload-test-page))]
     (let [dp (get-data-provider [])
           news (i/load-news dp)]
       (is (not-empty news))
