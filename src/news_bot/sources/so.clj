@@ -50,23 +50,19 @@
   (cond
     (str/ends-with? (name key) "_date") (tc/from-epoch value)
     (= key :title) (clean-html value)
-    :else value
-    )
-  )
+    (= key :question_id) (str value)
+    :else value))
 
 (defn read-feed-on [tags on-date period]
   (flatten (keep #((json/read-str
                      (load-thread % on-date period)
                      :value-fn so-value-reader :key-fn keyword)
                     :items)
-                 tags))
-  )
+                 tags)))
 
 (defn cpp-feed [on-date period]
   (distinct
-    (read-feed-on so-cpp-tags on-date period)
-    )
-  )
+    (read-feed-on so-cpp-tags on-date period)))
 
 (defn get-so-news
   [& {:keys [count on-date period] :or {count   3
@@ -81,7 +77,7 @@
 (defn build-header [period date]
   (case period
     :month (tf/unparse (tf/formatter "MMMM") date)
-    :year (str "the " (time/year date))
+    :year (str (time/year date))
     (str "the " (name period))))
 
 (defrecord SODataProvider [load-count period] i/DataProvider
@@ -103,12 +99,10 @@
   {:pre  [(s/valid? pos-int? count)
           (s/valid? keyword? period)]
    :post [(s/valid? ::i/data-provider %)]}
-  (SODataProvider. count period)
-  )
+  (SODataProvider. count period))
 
 ;(def dp (SODataProvider. 3 :day))
 ;
-;(:period dp)
 ;(try
 ;  (i/load-news dp)
 ;  (catch Exception e

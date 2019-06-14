@@ -41,6 +41,8 @@
       (str/replace #"-" "_")))
 
 (defn- post-update [rec]
+  {:pre [(s/valid? ::sources/post-rec rec)]}
+
   (let [tags (str/join " " (map #(str "#" (preprocess-tag %)) (rec :tags)))
         msg  (str (rec :title) "\n\n" tags "\n\n" (rec :link))]
     (try
@@ -57,3 +59,4 @@
    :post [(s/valid? ::p/news-list %)]}
 
   (into #{} (keep post-update (sources/load-news update))))
+

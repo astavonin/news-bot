@@ -6,7 +6,10 @@
             [twitter.api.restful :as t]
             [news-bot.sources.so :as so]
             [news-bot.so-test :as sot]
-            [clj-time.core :as time]))
+            [clj-time.core :as time]
+            [news-bot.sources.common-dp :as common-dp]
+            [clj-http.client :as http]
+            [news-bot.sources.overload :as overload]))
 
 (defn setup-wrapper [f]
   (setup-localstack bucket-name)
@@ -17,13 +20,13 @@
 
 (deftest publish-overload-update-test
   (let [post-counter (atom 0)]
-    (with-redefs [load-overload-main-page (fn [] (slurp overload-test-page))
-                  t/statuses-update       (fn [& {:keys [_]}]
-                                            (swap! post-counter inc))]
-      (publish-overload-update bucket-name)
+    (with-redefs [common-dp/load-page (fn [_] (load-test-page overload-test-page))
+                  t/statuses-update   (fn [& {:keys [_]}]
+                                        (swap! post-counter inc))]
+      (publish-update bucket-name overload/get-data-provider)
       (is (= @post-counter 1))
       ; update should be posted just once
-      (publish-overload-update bucket-name)
+      (publish-update bucket-name overload/get-data-provider)
       (is (= @post-counter 1)))))
 
 (deftest publish-so-update-test
@@ -41,10 +44,10 @@
 (deftest publish-updates-test
   (let [so-dp        (atom {})
         post-counter (atom 0)]
-    (with-redefs [publish-so-update       (fn [_ data-source _]
+    (with-redefs [publish-so-update (fn [_ data-source _]
                                             (reset! so-dp data-source)
                                             (swap! post-counter inc))
-                  publish-overload-update (fn [_])]
+                  publish-update    (fn [_ _])]
       (publish-updates bucket-name (time/date-time 2019 05 16 10 10))
       (is (= (:period @so-dp) :day))
       (is (= @post-counter 1))

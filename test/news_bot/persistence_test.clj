@@ -15,12 +15,12 @@
 
 (deftest store-load-posted-test
   (testing "error cases"
-    (let [err-info (exception-info (store-data "wrong-bucket-name" :so #{1 2 3}))]
+    (let [err-info (exception-info (store-data "wrong-bucket-name" :so #{"1" "2" "3"}))]
       (is (= (err-info :category) :news-bot.persistence/persistence))
       (is (= (err-info :type) :news-bot.persistence/s3-error)))
     )
   (testing "store/load data"
-    (let [data #{1 3 5 7 9}]
+    (let [data #{"1" "3" "5" "7" "9"}]
       (store-data bucket-name :so data)
       (is (= (load-data bucket-name :so) data))))
   )

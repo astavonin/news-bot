@@ -11,7 +11,7 @@
 ; -----------------------
 ; in/out data data validators
 ; -----------------------
-(s/def ::news-id int?)
+(s/def ::news-id string?)
 (s/def ::news-list (s/coll-of ::news-id :kind set?))
 (s/def ::twitter-cred (s/map-of keyword? string?))
 
@@ -129,10 +129,10 @@
 
 ;(set-aws-endpoint)
 ;(aws/ops @sm)
-(load-twitter-cred (conf/config :twitter-secret-id))
+;(load-twitter-cred (conf/config :twitter-secret-id))
 
 ;(aws/doc @sm :PutSecretValue)
-(aws/ops @sm)
+;(aws/ops @sm)
 
 ;(aws/invoke @sm {:op :ListSecrets})
 ;(aws/invoke @sm {:op      :GetSecretValue :request {:SecretId "twitter/cpp_news_bot"}})

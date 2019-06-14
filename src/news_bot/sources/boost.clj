@@ -1,11 +1,13 @@
 (ns news-bot.sources.boost
-  (:require [news-bot.sources.utils :as utils]
-            [hickory.select :as hs]
+  (:require [hickory.select :as hs]
             [clojure.string :as string]
-            [clojure.string :as str]))
+            [clojure.string :as str]
+            [news-bot.sources.interface :as i]
+            [clojure.spec.alpha :as s]
+            [news-bot.sources.common-dp :as common-dp]))
 
 (def boost-root "https://www.boost.org")
-(def news-page (str/join "/" [boost-root "/users/news/"]))
+(def boost-news-page (str/join "/" [boost-root "/users/news/"]))
 
 (defn create-changes-report [changes]
   (let [libs-pattern #"^New Libraries:(.*?\.)?.*Updated Libraries:(.*?\.)?(.*)$"
@@ -48,10 +50,28 @@
                             second)
                url      (str boost-root (-> ver-elem first :attrs :href))
                changes  (create-changes-report (trim-content (hs/select (hs/child (hs/class "purpose")) descr)))]
-           {:title (format "BOOST %s is available. %s" ver changes) :link url :id ver})
+           {:title (format "BOOST %s is available. %s" ver changes) :link url :id ver :tags ["cpp" "lib-boost"]})
          )
        (parse-page page)))
 
-(defn load-boost-releases []
-  (let [page (utils/load-page news-page)]
-    (parse-versions page)))
+
+(defrecord BoostDataProvider [already-posted] i/DataProvider
+  (load-news [_] (common-dp/load-news already-posted boost-news-page parse-versions))
+  (id [_] :boost))
+
+(defn get-data-provider
+  ([]
+   {:post [(s/valid? ::i/data-provider %)]}
+   (BoostDataProvider. #{}))
+  ([already-posted]
+   {:post [(s/valid? ::i/data-provider %)]}
+   (BoostDataProvider. (if (not-empty already-posted)
+                         already-posted
+                         #{}))))
+
+;(def dp (get-data-provider #{"1.69.0"}))
+;
+;(try
+;  (i/load-news dp)
+;  (catch Exception e
+;    (println e)))

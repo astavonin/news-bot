@@ -2,7 +2,7 @@
   (:require [clojure.spec.alpha :as s]))
 
 
-(s/def ::id int?)
+(s/def ::id string?)
 (s/def ::title string?)
 (s/def ::tags (s/coll-of string?))
 (s/def ::link string?)

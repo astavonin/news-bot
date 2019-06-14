@@ -59,7 +59,7 @@
   (is (= (build-header :day (time/now)) "the day"))
   (is (= (build-header :week (time/now)) "the week"))
   (is (= (build-header :month (time/date-time 2019 04 30)) "April"))
-  (is (= (build-header :year (time/date-time 2018 12 31)) "the 2018"))
+  (is (= (build-header :year (time/date-time 2018 12 31)) "2018"))
   )
 
 (deftest http-errors-test

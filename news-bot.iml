@@ -134,6 +134,7 @@
     <orderEntry type="library" name="Leiningen: tigris:0.1.1" level="project" />
     <orderEntry type="library" name="Leiningen: twitter-api:1.8.0" level="project" />
     <orderEntry type="library" name="Leiningen: uswitch/lambada:0.1.2" level="project" />
+    <orderEntry type="library" name="Leiningen: version-clj:0.1.2" level="project" />
     <orderEntry type="library" name="Leiningen: viebel/codox-klipse-theme:0.0.1" level="project" />
   </component>
 </module>

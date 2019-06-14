@@ -2,17 +2,17 @@
   (:require [news-bot.sources.so :as so]
             [news-bot.twitter :as twitter]
             [clj-time.core :as time]
-            [clj-time.format :as tf]
-            [news-bot.sources.overload :as o]
+            [news-bot.sources.overload :as overload]
+            [news-bot.sources.boost :as boost]
             [news-bot.persistence :as p]
-            [clj-time.coerce :as tc]
+            [news-bot.sources.interface :as sources]
             [taoensso.timbre :as log]))
 
 (defn publish-so-update [bucket data-source date]
   (let [posted-dates (try
                        (p/load-data bucket :so)
                        (catch Exception _ #{}))
-        day          (tc/to-epoch (time/with-time-at-start-of-day date))]
+        day          (str (time/with-time-at-start-of-day date))]
     (if-not (contains? posted-dates day)
       (let [posted (twitter/post-updates data-source)]
         (if-not (empty? posted)
@@ -21,15 +21,16 @@
             (log/info "SO update" posted "was successfully posted"))))
       (log/debug "we'd already made SO update today" date))))
 
-(defn publish-overload-update [bucket]
-  (let [already-posted (try
-                         (p/load-data bucket :overload)
+(defn publish-update [bucket data-provider-getter]
+  (let [source         (sources/id (data-provider-getter))
+        already-posted (try
+                         (p/load-data bucket source)
                          (catch Exception _ #{}))
-        just-posted    (twitter/post-updates (o/get-data-provider already-posted))]
+        just-posted    (twitter/post-updates (data-provider-getter already-posted))]
     (when-not (empty? just-posted)
       (do
-        (p/store-data bucket :overload (into already-posted just-posted))
-        (log/info "Overload update(s)" just-posted "was successfully posted")))))
+        (p/store-data bucket source (into already-posted just-posted))
+        (log/info (name source) "update(s)" just-posted "was successfully posted")))))
 
 (defn publish-updates [bucket on-date]
   ; only one SO update per day:
@@ -44,7 +45,8 @@
                (so/get-data-provider 1 :week)               ;   but last day of the week
                (so/get-data-provider 1 :day)))]             ;   just regular day
     (publish-so-update bucket dp on-date))
-  (publish-overload-update bucket))
+  (publish-update bucket overload/get-data-provider)
+  (publish-update bucket boost/get-data-provider))
 
 ;(try
 ;  (t/post-updates so-news-reader)

@@ -9,7 +9,7 @@
 (defrecord TestDataProvider [count] i/DataProvider
   (load-news [_] (map
                    (fn [id]
-                     {:id id :title "some title" :link "http://foo.boo" :tags ["c++" "c++11" "just-tag"]})
+                     {:id (str id) :title "some title" :link "http://foo.boo" :tags ["c++" "c++11" "just-tag"]})
                    (range count)))
   (id [_] :tests))
 
@@ -21,9 +21,9 @@
                                         (is (str/includes? text "some title"))
                                         (is (str/includes? text "http://foo.boo"))))]
       (let [dp (TestDataProvider. 3)]
-        (is (= #{0 1 2} (set (post-updates dp)))))
+        (is (= #{"0" "1" "2"} (set (post-updates dp)))))
       (let [dp (TestDataProvider. 1)]
-        (is (= #{0} (set (post-updates dp)))))
+        (is (= #{"0"} (set (post-updates dp)))))
       (let [dp (TestDataProvider. 0)]
         (is (empty? (post-updates dp))))
       ))
@@ -34,5 +34,5 @@
         (is (= (err-info :category) :news-bot.twitter/posting))
         (is (= (err-info :type) :news-bot.twitter/twitter))))))
 
-;(run-tests 'news-bot.twitter-test)
+(run-tests 'news-bot.twitter-test)
 

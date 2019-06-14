@@ -182,3 +182,8 @@ fabric.properties
 
 # credentals for local development
 _*.edn
+
+# terraform internal data
+
+.terraform
+
