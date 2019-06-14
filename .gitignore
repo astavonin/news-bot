@@ -187,3 +187,4 @@ _*.edn
 
 .terraform
 
+outfile.txt

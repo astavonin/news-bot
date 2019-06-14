@@ -13,7 +13,7 @@ News Bot will support some extra data sources soon:
 
 # Compiling
 
-The news bot is AWS Lambda hosted application and JVM 8 is **mandatory** for AWS execution. News Bot **must** be compiled with JVM 8, otherwise AWS Lambda will fail on startup inside `nio`. 
+The News Bot is AWS Lambda hosted application and JVM 8 is **mandatory** for AWS execution. News Bot **must** be compiled with JVM 8, otherwise AWS Lambda will fail on startup inside `nio`. 
 
 Compile `uberjar`:
 ```bash
@@ -43,7 +43,7 @@ _NOTE:_ Terraform support is under construction.
 
 Some pre-configuration is required for local tests execution:
 
-* _twitter.edn file should contain Twitter credentials as END record:
+* _twitter.edn file should contain Twitter credentials as EDN record:
 ```clojure
 {:AppKey "_APP_KEY_",
  :AppSecret "_APP_SECRET_",

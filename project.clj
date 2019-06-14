@@ -18,9 +18,7 @@
                  [hickory "0.7.1"]
                  [uswitch/lambada "0.1.2"]
                  [version-clj "0.1.2"]]
-  :plugins [
-            [lein-cloverage "1.1.1"]
-            ]
+  :plugins [[lein-cloverage "1.1.1"]]
   :main ^:skip-aot news-bot.core
   :target-path "target/%s"
   :uberjar-name "news-bot.jar"
