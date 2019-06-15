@@ -4,10 +4,12 @@
             [clojure.string :as str]
             [news-bot.sources.interface :as i]
             [clojure.spec.alpha :as s]
-            [news-bot.sources.common-dp :as common-dp]))
+            [news-bot.sources.common-dp :as common-dp]
+            [clj-http.client :as http]))
 
 (def boost-root "https://www.boost.org")
 (def boost-news-page (str/join "/" [boost-root "/users/news/"]))
+;(spit "Boost News.htm" (:body (http/get boost-news-page)))
 
 (defn create-changes-report [changes]
   (let [libs-pattern #"^New Libraries:(.*?\.)?.*Updated Libraries:(.*?\.)?(.*)$"
@@ -46,7 +48,7 @@
   (map (fn [[header descr]]
          (let [ver-elem (hs/select (hs/child (hs/find-in-text #"Version")) header)
                ver      (-> (trim-content ver-elem)
-                            (#(re-find #"^Version (\S+)" %))
+                            (#(re-find #"^Version (\S+)?" %))
                             second)
                url      (str boost-root (-> ver-elem first :attrs :href))
                changes  (create-changes-report (trim-content (hs/select (hs/child (hs/class "purpose")) descr)))]
