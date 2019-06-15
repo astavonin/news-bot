@@ -40,20 +40,15 @@
                                    (hs/class "news-description"))))
                      page)))
 
-(defn- trim-content [content]
-  (-> content
-      first :content first string/trim))
-
 (defn parse-versions [page]
   (map (fn [[header descr]]
          (let [ver-elem (hs/select (hs/child (hs/find-in-text #"Version")) header)
-               ver      (-> (trim-content ver-elem)
+               ver      (-> (common-dp/trim-content (first ver-elem))
                             (#(re-find #"^Version (\S+)?" %))
                             second)
                url      (str boost-root (-> ver-elem first :attrs :href))
-               changes  (create-changes-report (trim-content (hs/select (hs/child (hs/class "purpose")) descr)))]
-           {:title (format "BOOST %s is available. %s" ver changes) :link url :id ver :tags ["cpp" "lib-boost"]})
-         )
+               changes  (create-changes-report (common-dp/trim-content (first (hs/select (hs/child (hs/class "purpose")) descr))))]
+           {:title (format "BOOST %s is available. %s" ver changes) :link url :id ver :tags ["cpp" "lib-boost"]}))
        (parse-page page)))
 
 

@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"><!--<![endif]-->
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width"/>
+<title>CMake Archives - Kitware Blog</title>
+<link rel="profile" href="http://gmpg.org/xfn/11"/>
+<link rel="pingback" href="https://blog.kitware.com/xmlrpc.php"/>
+
+<!-- This site is optimized with the Yoast SEO plugin v11.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://blog.kitware.com/tag/cmake/"/>
+<link rel="next" href="https://blog.kitware.com/tag/cmake/page/2/"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="object"/>
+<meta property="og:title" content="CMake Archives - Kitware Blog"/>
+<meta property="og:url" content="https://blog.kitware.com/tag/cmake/"/>
+<meta property="og:site_name" content="Kitware Blog"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="CMake Archives - Kitware Blog"/>
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://blog.kitware.com/#organization","name":"Kitware, Inc.","url":"https://blog.kitware.com/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://blog.kitware.com/#logo","url":"https://blog.kitware.com/wp-content/uploads/2018/05/kitware_logo.png","width":441,"height":114,"caption":"Kitware, Inc."},"image":{"@id":"https://blog.kitware.com/#logo"}},{"@type":"WebSite","@id":"https://blog.kitware.com/#website","url":"https://blog.kitware.com/","name":"Kitware Blog","publisher":{"@id":"https://blog.kitware.com/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://blog.kitware.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"CollectionPage","@id":"https://blog.kitware.com/tag/cmake/#webpage","url":"https://blog.kitware.com/tag/cmake/","inLanguage":"en-US","name":"CMake Archives - Kitware Blog","isPartOf":{"@id":"https://blog.kitware.com/#website"}}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//s0.wp.com'/>
+<link rel='dns-prefetch' href='//fonts.googleapis.com'/>
+<link rel="alternate" type="application/rss+xml" title="Kitware Blog &raquo; Feed" href="https://blog.kitware.com/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="Kitware Blog &raquo; Comments Feed" href="https://blog.kitware.com/comments/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="Kitware Blog &raquo; CMake Tag Feed" href="https://blog.kitware.com/tag/cmake/feed/"/>
+<style type="text/css">img.wp-smiley,img.emoji{display:inline!important;border:none!important;box-shadow:none!important;height:1em!important;width:1em!important;margin:0 .07em!important;vertical-align:-.1em!important;background:none!important;padding:0!important}</style>
+	<link rel='stylesheet' id='crayon-css' href='https://blog.kitware.com/wp-content/plugins/crayon-syntax-highlighter/css/min/A.crayon.min.css,qver=_2.7.2_beta.pagespeed.cf.mq-q_3-6BY.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='crayon-theme-coy-css' href='https://blog.kitware.com/wp-content/plugins/crayon-syntax-highlighter/themes/coy/A.coy.css,qver=_2.7.2_beta.pagespeed.cf.7zvG37LHPZ.css' type='text/css' media='all'/>
+<style id='crayon-font-monaco-css' media='all'>@font-face{font-family:'MonacoRegular';src:url(/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot);src:url(/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.eot?#iefix) format('embedded-opentype') , url(/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.woff) format('woff') , url(/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.ttf) format('truetype') , url(/wp-content/plugins/crayon-syntax-highlighter/fonts/monaco/monaco-webfont.svg#MonacoRegular) format('svg');font-weight:normal;font-style:normal}.crayon-font-monaco *{font-family:Monaco,'MonacoRegular','Courier New',monospace!important}</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://blog.kitware.com/wp-includes/css/dist/block-library/style.min.css,qver=5.2.1.pagespeed.ce.N1vWXWD_PI.css' type='text/css' media='all'/>
+<link rel='stylesheet' id='dashicons-css' href='https://blog.kitware.com/wp-includes/css/A.dashicons.min.css,qver=5.2.1.pagespeed.cf.Zfe6btZDbd.css' type='text/css' media='all'/>
+<style id='post-views-counter-frontend-css' media='all'>.post-views.entry-meta>span{margin-right:0!important;font: 16px/1}.post-views.entry-meta>span.post-views-icon.dashicons{display:inline-block;font-size:16px;line-height:1;text-decoration:inherit;vertical-align:middle}</style>
+<link rel='stylesheet' id='kwblog_style-css' href='https://blog.kitware.com/wp-content/themes/solidblog-child/css/A.kwblog.css,qver=5.2.1.pagespeed.cf.M0I9SP8T1c.css' type='text/css' media='all'/>
+<style id='richwp-style-css' media='all'></style>
+<link rel='stylesheet' id='evcal_google_fonts-css' href='//fonts.googleapis.com/css?family=Oswald%3A400%2C300%7COpen+Sans%3A700%2C400%2C400i%7CRoboto%3A700%2C400&#038;ver=5.2.1' type='text/css' media='screen'/>
+<link rel='stylesheet' id='jetpack_css-css' href='https://blog.kitware.com/wp-content/plugins/jetpack/css/A.jetpack.css,qver=7.3.1.pagespeed.cf.EPK_eWhl6_.css' type='text/css' media='all'/>
+<script type="text/javascript">(function(a,d){if(a._nsl===d){a._nsl=[];var c=function(){if(a.jQuery===d)setTimeout(c,33);else{for(var b=0;b<a._nsl.length;b++)a._nsl[b].call(a,a.jQuery);a._nsl={push:function(b){b.call(a,a.jQuery)}}}};c()}})(window);</script><script type='text/javascript' src='https://blog.kitware.com/wp-includes/js/jquery/jquery.js,qver=1.12.4-wp.pagespeed.jm.gp20iU5FlU.js'></script>
+<script type='text/javascript' src='https://blog.kitware.com/wp-includes/js/jquery/jquery-migrate.min.js,qver=1.4.1.pagespeed.jm.C2obERNcWh.js'></script>
+<script type='text/javascript'>//<![CDATA[
+var CrayonSyntaxSettings={"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/blog.kitware.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};var CrayonSyntaxStrings={"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+//]]></script>
+<script src="https://blog.kitware.com/wp-content/plugins,_crayon-syntax-highlighter,_js,_min,_crayon.min.js,qver==_2.7.2_beta+themes,_solidblog,_js,_modernizr-2.6.1.min.js,qver==1.0.pagespeed.jc.nZ_tmjhmpG.js"></script><script>eval(mod_pagespeed_xWMBMXY1If);</script>
+<script>eval(mod_pagespeed_jro6xeWzhl);</script>
+<link rel='https://api.w.org/' href='https://blog.kitware.com/wp-json/'/>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.kitware.com/xmlrpc.php?rsd"/>
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.kitware.com/wp-includes/wlwmanifest.xml"/> 
+<meta name="generator" content="WordPress 5.2.1"/>
+
+<link rel='dns-prefetch' href='//jetpack.wordpress.com'/>
+<link rel='dns-prefetch' href='//s0.wp.com'/>
+<link rel='dns-prefetch' href='//s1.wp.com'/>
+<link rel='dns-prefetch' href='//s2.wp.com'/>
+<link rel='dns-prefetch' href='//public-api.wordpress.com'/>
+<link rel='dns-prefetch' href='//0.gravatar.com'/>
+<link rel='dns-prefetch' href='//1.gravatar.com'/>
+<link rel='dns-prefetch' href='//2.gravatar.com'/>
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<style type='text/css'>img#wpstats{display:none}</style><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-6042509-32','auto',{'siteSpeedSampleRate':10,'alwaysSendReferrer':true});ga('send','pageview');</script>
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<!--[if IE 7]>
+<style type="text/css">	[class^="icon-"] a, #searchicon a{text-indent: 0px;} </style>
+<![endif]-->
+<style type="text/css">@font-face{font-family:'richicons';src:url(https://blog.kitware.com/wp-content/themes/solidblog/font/richicons.eot?24480651);src:url(https://blog.kitware.com/wp-content/themes/solidblog/font/richicons.eot?24480651#iefix) format('embedded-opentype') , url(https://blog.kitware.com/wp-content/themes/solidblog/font/richicons.woff?24480651) format('woff') , url(https://blog.kitware.com/wp-content/themes/solidblog/font/richicons.ttf?24480651) format('truetype') , url(https://blog.kitware.com/wp-content/themes/solidblog/font/richicons.svg?24480651#richicons) format('svg');font-weight:normal;font-style:normal}a,a:hover,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,h1.entry-title a:hover,.meta-nav a,.meta-nav a:hover,#respond .required,.widget-area a:hover,.footer-widget-area a:hover,#colophon a:hover,.nav-previous a span,.nav-next a span,.postformatlabel a span,.paginate a:hover,.paginate a:active,.paginate .current,#cancel-comment-reply-link{color:#00529b}a.styledbutton,a.more-link,input[type="submit"]#submit,input[type="submit"],#navigation,.catlabel{background:#00529b}a:hover.styledbutton,a:hover.more-link,input[type="submit"]:hover#submit,input[type="submit"]:hover,.sf-menu li:hover,.sf-menu li.sfHover,.sf-menu li.current-menu-item,.searchbox{background:#00a950}#header{background:#fff}.sf-menu a,ul.sub-menu a:hover,ul.sub-menu li.current-menu-item a,.catlabel,.catlabel a,.catlabel a:hover,[class^="icon-"],#searchicon,#menutrigger,h1#sitetitle,p#sitedescription{color:#fff}</style>
+
+
+<!-- EventON Version -->
+<meta name="generator" content="EventON 2.6.15"/>
+
+		<style type="text/css">.recentcomments a{display:inline!important;padding:0!important;margin:0!important}</style>
+		<!-- All in one Favicon 4.7 --><link rel="icon" href="https://blog.kitware.com/wp-content/uploads/2017/04/xExternalFavicon.png.pagespeed.ic.BxFzGTIFZT.png" type="image/png"/>
+<style type="text/css">div.nsl-container[data-align="left"]{text-align:left}div.nsl-container[data-align="center"]{text-align:center}div.nsl-container[data-align="right"]{text-align:right}div.nsl-container .nsl-container-buttons a{text-decoration:none!important;box-shadow:none!important;border:0}div.nsl-container .nsl-container-buttons{display:flex;padding:5px 0}div.nsl-container-block .nsl-container-buttons{flex-flow:column;align-items:center}div.nsl-container-block .nsl-container-buttons a{flex:1 1 auto;display:block;margin:5px 0;max-width:280px;width:100%}div.nsl-container-inline{margin:-5px;text-align:left}div.nsl-container-inline .nsl-container-buttons{justify-content:center}div.nsl-container-inline .nsl-container-buttons a{margin:5px;display:inline-block}div.nsl-container-grid .nsl-container-buttons{flex-flow:row;align-items:center;flex-wrap:wrap}div.nsl-container-grid .nsl-container-buttons a{flex:1 1 auto;display:block;margin:5px;max-width:280px;width:100%}@media only screen and (min-width:650px){div.nsl-container-grid .nsl-container-buttons a{width:auto}}div.nsl-container .nsl-button{cursor:pointer;vertical-align:top;border-radius:4px}div.nsl-container .nsl-button-default{color:#fff;display:flex}div.nsl-container .nsl-button-icon{display:inline-block}div.nsl-container .nsl-button-svg-container{flex:0 0 auto;padding:8px;display:flex}div.nsl-container span{display:inline-block}div.nsl-container svg{height:24px;width:24px;vertical-align:top}div.nsl-container .nsl-button-default span.nsl-button-label-container{margin:0 24px 0 12px;padding:10px 0;font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:20px;letter-spacing:.25px;overflow:hidden;text-align:center;text-overflow:clip;white-space:nowrap;flex:1 1 auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}div.nsl-container .nsl-button-google[data-skin="dark"] .nsl-button-svg-container{margin:1px;padding:7px;border-radius:3px;background:#fff}div.nsl-container .nsl-button-google[data-skin="light"]{border-radius:1px;box-shadow:0 1px 5px 0 rgba(0,0,0,.25);color:RGBA(0,0,0,.54)}div.nsl-container-block[data-align="left"] .nsl-container-buttons{align-items:flex-start}div.nsl-container-block[data-align="center"] .nsl-container-buttons{align-items:center}div.nsl-container-block[data-align="right"] .nsl-container-buttons{align-items:flex-end}div.nsl-container-inline[data-align="left"] .nsl-container-buttons{justify-content:flex-start}div.nsl-container-inline[data-align="center"] .nsl-container-buttons{justify-content:center}div.nsl-container-inline[data-align="right"] .nsl-container-buttons{justify-content:flex-end}div.nsl-container-grid[data-align="left"] .nsl-container-buttons{justify-content:flex-start}div.nsl-container-grid[data-align="center"] .nsl-container-buttons{justify-content:center}div.nsl-container-grid[data-align="right"] .nsl-container-buttons{justify-content:flex-end}div.nsl-container-grid[data-align="space-around"] .nsl-container-buttons{justify-content:space-around}div.nsl-container-grid[data-align="space-between"] .nsl-container-buttons{justify-content:space-between}</style>			<style id="wp-custom-css">.widget-area a,.footer-widget-area a{color:#4b4a4c;text-decoration:none}.ajde_evcal_calendar #evcal_head.calendar_header #evcal_cur,.ajde_evcal_calendar .evcal_month_line p{color:#8f8f8f}@media (min-width:800px){article.boxes{padding:40px}article{letter-spacing:.02em;color:#444}}@media (max-width:799px){ul{margin-left:0}}.postlistbox.withthumbnail{display:flex}.postlistbox.withthumbnail header.withfeaturedimage{width:100%;float:none}#authors-2 select{max-width:100%}#footer{background:#00162d;padding:0!important;clear:both;width:100%}#footer a:hover{text-decoration:underline}#footer-info{padding:15px 10px 15px 10px}.footernav ul{margin-bottom:0;border-left:1px solid #696969}a.searchicon{cursor:pointer}a.styledbutton{display:none}article p{margin-bottom:25px;line-height:155%}.tagscontainer{margin:10px 0}.kw_menu>li.jobs-link{position:absolute;right:-110px;top:-6px;background:#00a950;color:#fff;padding:0;width:78px;z-index:999;transition:all .25s ease-in-out}.kw_menu>li.jobs-link a{background:none;color:#fff!important;text-transform:uppercase;text-align:center;padding:10px!important;font-size:12px}.kw_menu>li.jobs-link:hover{background:#008840}.kw_menu>li.jobs-link a:hover{background:none}.kw_menu>li.jobs-link a:before{background:url(/wp-content/uploads/2018/10/xjobs_icon.png.pagespeed.ic.-HOi_uhXhJ.png) no-repeat;content:"";display:block;width:32px;height:32px;background-size:100%;margin:0 auto}.toggled .kw_menu>li.jobs-link{background:#00529b;right:auto;position:relative;top:auto;width:auto;text-align:left}.toggled .kw_menu>li.jobs-link a{color:#fff;text-align:left}.toggled .kw_menu>li.jobs-link a:before{display:inline-block;width:24px;height:24px;float:left;margin-right:10px}.eventon_desc_in .btn{background:#00529b;color:#fff!important;padding:4px 9px;border-radius:3px;margin-top:5px;font-size:24px;text-decoration:none}</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player,[data-lazy-src]{display:none!important}</style></noscript></head>
+<body class="archive tag tag-cmake tag-3 bg">
+
+	
+	<div id="header" class="main_header">
+		<div id="masthead" class="container_16 containermargin">
+			<div id="logo">
+								<a href="https://blog.kitware.com" title="Kitware Blog"><img src="https://blog.kitware.com/wp-content/uploads/2015/10/xKitwareBlog_Logo.png.pagespeed.ic.hjjiBTgDsJ.png" alt="Kitware Blog"/> </a>
+							</div><!-- #logo -->
+			<ul id="searchMenu" class="kw_search_menu" tabindex="0">
+
+				<li id="searchicon" class="icon-search">
+					<a class="searchicon">Search</a>
+					<ul id="searchul" class="sub-menu" style="left:auto; right:0;">
+						<li><form role="search" method="get" id="searchform" class="searchform" action="https://blog.kitware.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s"/>
+					<input type="submit" id="searchsubmit" value="Search"/>
+				</div>
+			</form></li>
+					</ul>
+				</li>
+
+			</ul>
+			<div id="mobilemenu" class="notonscreen">
+				<div id="menutrigger" class="icon-th-list"> </div>
+			</div>
+			<nav id="navigation">
+				<div class="nav1">
+					<div class="menu-main-container"><ul id="primary" class="kw_menu"><li id="menu-item-23610" class="jobs-link menu-item menu-item-type-custom menu-item-object-custom menu-item-23610"><a target="_blank" rel="noopener noreferrer" href="https://jobs.kitware.com">Kitware is hiring</a></li>
+<li id="menu-item-17504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17504"><a target="_blank" rel="noopener noreferrer" href="https://www.kitware.com">kitware.com</a></li>
+<li id="menu-item-17505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-17505"><a href="https://blog.kitware.com">Blog</a></li>
+<li id="menu-item-20843" class="menu-item menu-item-type-post_type_archive menu-item-object-ajde_events menu-item-20843"><a href="https://blog.kitware.com/events/">Events</a></li>
+<li id="menu-item-24736" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-24736"><a href="/event-type/courses/">Courses</a></li>
+<li id="menu-item-24739" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24739"><a href="https://blog.kitware.com/demos/">Demos</a></li>
+<li id="menu-item-22686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22686"><a href="https://blog.kitware.com/expertise/">Expertise</a></li>
+<li id="menu-item-22662" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22662"><a target="_blank" rel="noopener noreferrer" href="https://kitware.com/contact-us/">Contact Us</a></li>
+</ul></div>					<div style="clear:both;"></div>
+				</div>
+			</nav><!-- #navigation -->
+			<div style="clear:both;"></div>
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+<div id="wrapper">
+    <div id="contentcontainer" class="container_16 containermargin">
+        <div id="content" class="grid_12">
+
+        <header class="boxes archiveheader">
+            <h1 class="entry-title">Posts tagged "<span>CMake</span>"</h1>
+        </header>
+
+        <article id="post-27292" class="articlebox articleboxsmall">
+	<div class="postlistbox withthumbnail">
+	
+	
+		<div class="postlistboximagesmall">
+			<a href="https://blog.kitware.com/cmake-3-15-0-rc1-is-ready-for-testing/" rel="bookmark"><img width="235" height="159" src="https://blog.kitware.com/wp-content/uploads/2019/06/235x159xTest_CMake.jpg.pagespeed.ic.aZ4sIaCCfm.jpg" class="attachment-235x3000 size-235x3000 wp-post-image" alt="" srcset="https://blog.kitware.com/wp-content/uploads/2019/06/xTest_CMake.jpg.pagespeed.ic.Fpc-xRel-I.jpg 1024w, https://blog.kitware.com/wp-content/uploads/2019/06/xTest_CMake-300x203.jpg.pagespeed.ic.MKCqwPgML7.jpg 300w, https://blog.kitware.com/wp-content/uploads/2019/06/xTest_CMake-768x521.jpg.pagespeed.ic.PB2hAjdCVO.jpg 768w, https://blog.kitware.com/wp-content/uploads/2019/06/xTest_CMake-220x149.jpg.pagespeed.ic.6IqxDcDCbI.jpg 220w, https://blog.kitware.com/wp-content/uploads/2019/06/xTest_CMake-250x169.jpg.pagespeed.ic.0U5Ol4X9tZ.jpg 250w, https://blog.kitware.com/wp-content/uploads/2019/06/xTest_CMake-355x241.jpg.pagespeed.ic.dVOz8xcZbl.jpg 355w, https://blog.kitware.com/wp-content/uploads/2019/06/xTest_CMake-730x495.jpg.pagespeed.ic.gkKSVuRArk.jpg 730w, https://blog.kitware.com/wp-content/uploads/2019/06/xTest_CMake-90x61.jpg.pagespeed.ic.aGwrAEloXa.jpg 90w" sizes="(max-width: 235px) 100vw, 235px"/></a>
+		</div>
+	<header class="withfeaturedimage">
+			<h2 class="postlisttitle entry-title"><a href="https://blog.kitware.com/cmake-3-15-0-rc1-is-ready-for-testing/" title="Permalink to CMake 3.15.0-rc1 is ready for testing" rel="bookmark">CMake 3.15.0-rc1 is ready for testing</a></h2>
+		
+		<div class="entry-meta">
+		<span class="author vcard notonmobile">
+
+<a href="https://blog.kitware.com/author/robert-maynard/" title="Posts by Robert Maynard" class="author url fn" rel="author">Robert Maynard</a>
+
+		June 4, 2019	
+		<!--in <a href="https://blog.kitware.com/category/all/" rel="category tag">All</a> Tags: <a href="https://blog.kitware.com/tag/cmake/" rel="tag">CMake</a> > <a href="https://blog.kitware.com/tag/release-notes/" rel="tag">Release Notes</a> > <a href="https://blog.kitware.com/tag/software-process/" rel="tag">Software Process</a>-->
+		 </div><!-- .entry-meta -->		
+		 
+	
+	<div class="postlistexcerpt noton768">
+		<p>I am proud to announce the first CMake 3.15 release candidate. https://cmake.org/download/ Documentation is available at: https://cmake.org/cmake/help/v3.15 Release notes appear below and are also published &#8230; <a class="styledbutton" href="https://blog.kitware.com/cmake-3-15-0-rc1-is-ready-for-testing/">Read More</a></p>
+	</div>
+	</header>
+	<div style="clear:both;"></div>
+	</div>
+</article>
+<article id="post-27161" class="articlebox articleboxsmall">
+	<div class="postlistbox withthumbnail">
+	
+	
+		<div class="postlistboximagesmall">
+			<a href="https://blog.kitware.com/cmake-3-14-5-available-for-download/" rel="bookmark"><img width="235" height="159" src="https://blog.kitware.com/wp-content/uploads/2019/05/235x159xRelease_CMake.jpg.pagespeed.ic.kPlpbtDgFv.jpg" class="attachment-235x3000 size-235x3000 wp-post-image" alt="" srcset="https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake.jpg.pagespeed.ic.wM722O9EJk.jpg 1024w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-300x203.jpg.pagespeed.ic.fndWwgkHWy.jpg 300w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-768x521.jpg.pagespeed.ic.fMn7M2Blcc.jpg 768w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-220x149.jpg.pagespeed.ic.QbB0aPlJ85.jpg 220w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-250x169.jpg.pagespeed.ic.RM6f0gLvWF.jpg 250w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-355x241.jpg.pagespeed.ic.ldItFPhlZW.jpg 355w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-730x495.jpg.pagespeed.ic.2LAyHHCpYT.jpg 730w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-90x61.jpg.pagespeed.ic.r2FFCvsyid.jpg 90w" sizes="(max-width: 235px) 100vw, 235px"/></a>
+		</div>
+	<header class="withfeaturedimage">
+			<h2 class="postlisttitle entry-title"><a href="https://blog.kitware.com/cmake-3-14-5-available-for-download/" title="Permalink to CMake 3.14.5 available for download" rel="bookmark">CMake 3.14.5 available for download</a></h2>
+		
+		<div class="entry-meta">
+		<span class="author vcard notonmobile">
+
+<a href="https://blog.kitware.com/author/robert-maynard/" title="Posts by Robert Maynard" class="author url fn" rel="author">Robert Maynard</a>
+
+		May 31, 2019	
+		<!--in <a href="https://blog.kitware.com/category/all/" rel="category tag">All</a> Tags: <a href="https://blog.kitware.com/tag/cmake/" rel="tag">CMake</a> > <a href="https://blog.kitware.com/tag/release-notes/" rel="tag">Release Notes</a> > <a href="https://blog.kitware.com/tag/software-process/" rel="tag">Software Process</a>-->
+		 </div><!-- .entry-meta -->		
+		 
+	
+	<div class="postlistexcerpt noton768">
+		<p>We are pleased to announce that CMake 3.14.5 is now available for download. The Visual Studio 2019 16.1 update introduced a regression in MSBuild&#8217;s evaluation &#8230; <a class="styledbutton" href="https://blog.kitware.com/cmake-3-14-5-available-for-download/">Read More</a></p>
+	</div>
+	</header>
+	<div style="clear:both;"></div>
+	</div>
+</article>
+<article id="post-26468" class="articlebox articleboxsmall">
+	<div class="postlistbox withthumbnail">
+	
+	
+		<div class="postlistboximagesmall">
+			<a href="https://blog.kitware.com/cmake-3-14-4-available-for-download/" rel="bookmark"><img width="235" height="159" src="https://blog.kitware.com/wp-content/uploads/2019/05/235x159xRelease_CMake.jpg.pagespeed.ic.kPlpbtDgFv.jpg" class="attachment-235x3000 size-235x3000 wp-post-image" alt="" srcset="https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake.jpg.pagespeed.ic.wM722O9EJk.jpg 1024w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-300x203.jpg.pagespeed.ic.fndWwgkHWy.jpg 300w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-768x521.jpg.pagespeed.ic.fMn7M2Blcc.jpg 768w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-220x149.jpg.pagespeed.ic.QbB0aPlJ85.jpg 220w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-250x169.jpg.pagespeed.ic.RM6f0gLvWF.jpg 250w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-355x241.jpg.pagespeed.ic.ldItFPhlZW.jpg 355w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-730x495.jpg.pagespeed.ic.2LAyHHCpYT.jpg 730w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-90x61.jpg.pagespeed.ic.r2FFCvsyid.jpg 90w" sizes="(max-width: 235px) 100vw, 235px"/></a>
+		</div>
+	<header class="withfeaturedimage">
+			<h2 class="postlisttitle entry-title"><a href="https://blog.kitware.com/cmake-3-14-4-available-for-download/" title="Permalink to CMake 3.14.4 available for download" rel="bookmark">CMake 3.14.4 available for download</a></h2>
+		
+		<div class="entry-meta">
+		<span class="author vcard notonmobile">
+
+<a href="https://blog.kitware.com/author/robert-maynard/" title="Posts by Robert Maynard" class="author url fn" rel="author">Robert Maynard</a>
+
+		May 15, 2019	
+		<!--in <a href="https://blog.kitware.com/category/all/" rel="category tag">All</a> Tags: <a href="https://blog.kitware.com/tag/cmake/" rel="tag">CMake</a> > <a href="https://blog.kitware.com/tag/release-notes/" rel="tag">Release Notes</a> > <a href="https://blog.kitware.com/tag/software-process/" rel="tag">Software Process</a>-->
+		 </div><!-- .entry-meta -->		
+		 
+	
+	<div class="postlistexcerpt noton768">
+		<p>We are pleased to announce that CMake 3.14.4 is now available for download. Please use the latest release from our download page: https://cmake.org/download/ Thanks for &#8230; <a class="styledbutton" href="https://blog.kitware.com/cmake-3-14-4-available-for-download/">Read More</a></p>
+	</div>
+	</header>
+	<div style="clear:both;"></div>
+	</div>
+</article>
+<article id="post-26463" class="articlebox articleboxsmall">
+	<div class="postlistbox withthumbnail">
+	
+	
+		<div class="postlistboximagesmall">
+			<a href="https://blog.kitware.com/cmake-3-13-5-available-for-download/" rel="bookmark"><img width="235" height="159" src="https://blog.kitware.com/wp-content/uploads/2019/05/235x159xRelease_CMake.jpg.pagespeed.ic.kPlpbtDgFv.jpg" class="attachment-235x3000 size-235x3000 wp-post-image" alt="" srcset="https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake.jpg.pagespeed.ic.wM722O9EJk.jpg 1024w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-300x203.jpg.pagespeed.ic.fndWwgkHWy.jpg 300w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-768x521.jpg.pagespeed.ic.fMn7M2Blcc.jpg 768w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-220x149.jpg.pagespeed.ic.QbB0aPlJ85.jpg 220w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-250x169.jpg.pagespeed.ic.RM6f0gLvWF.jpg 250w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-355x241.jpg.pagespeed.ic.ldItFPhlZW.jpg 355w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-730x495.jpg.pagespeed.ic.2LAyHHCpYT.jpg 730w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-90x61.jpg.pagespeed.ic.r2FFCvsyid.jpg 90w" sizes="(max-width: 235px) 100vw, 235px"/></a>
+		</div>
+	<header class="withfeaturedimage">
+			<h2 class="postlisttitle entry-title"><a href="https://blog.kitware.com/cmake-3-13-5-available-for-download/" title="Permalink to CMake 3.13.5 available for download" rel="bookmark">CMake 3.13.5 available for download</a></h2>
+		
+		<div class="entry-meta">
+		<span class="author vcard notonmobile">
+
+<a href="https://blog.kitware.com/author/robert-maynard/" title="Posts by Robert Maynard" class="author url fn" rel="author">Robert Maynard</a>
+
+		May 14, 2019	
+		<!--in <a href="https://blog.kitware.com/category/all/" rel="category tag">All</a> Tags: <a href="https://blog.kitware.com/tag/cmake/" rel="tag">CMake</a> > <a href="https://blog.kitware.com/tag/release-notes/" rel="tag">Release Notes</a> > <a href="https://blog.kitware.com/tag/software-process/" rel="tag">Software Process</a>-->
+		 </div><!-- .entry-meta -->		
+		 
+	
+	<div class="postlistexcerpt noton768">
+		<p>We are pleased to announce that CMake 3.13.5 is now available for download. Please use the latest release from our download page: https://cmake.org/download/ Thanks for &#8230; <a class="styledbutton" href="https://blog.kitware.com/cmake-3-13-5-available-for-download/">Read More</a></p>
+	</div>
+	</header>
+	<div style="clear:both;"></div>
+	</div>
+</article>
+<article id="post-25933" class="articlebox articleboxsmall">
+	<div class="postlistbox withthumbnail">
+	
+	
+		<div class="postlistboximagesmall">
+			<a href="https://blog.kitware.com/cmake-3-14-3-available-for-download/" rel="bookmark"><img width="235" height="159" src="https://blog.kitware.com/wp-content/uploads/2019/05/235x159xRelease_CMake.jpg.pagespeed.ic.kPlpbtDgFv.jpg" class="attachment-235x3000 size-235x3000 wp-post-image" alt="" srcset="https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake.jpg.pagespeed.ic.wM722O9EJk.jpg 1024w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-300x203.jpg.pagespeed.ic.fndWwgkHWy.jpg 300w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-768x521.jpg.pagespeed.ic.fMn7M2Blcc.jpg 768w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-220x149.jpg.pagespeed.ic.QbB0aPlJ85.jpg 220w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-250x169.jpg.pagespeed.ic.RM6f0gLvWF.jpg 250w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-355x241.jpg.pagespeed.ic.ldItFPhlZW.jpg 355w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-730x495.jpg.pagespeed.ic.2LAyHHCpYT.jpg 730w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-90x61.jpg.pagespeed.ic.r2FFCvsyid.jpg 90w" sizes="(max-width: 235px) 100vw, 235px"/></a>
+		</div>
+	<header class="withfeaturedimage">
+			<h2 class="postlisttitle entry-title"><a href="https://blog.kitware.com/cmake-3-14-3-available-for-download/" title="Permalink to CMake 3.14.3 available for download" rel="bookmark">CMake 3.14.3 available for download</a></h2>
+		
+		<div class="entry-meta">
+		<span class="author vcard notonmobile">
+
+<a href="https://blog.kitware.com/author/robert-maynard/" title="Posts by Robert Maynard" class="author url fn" rel="author">Robert Maynard</a>
+
+		April 22, 2019	
+		<!--in <a href="https://blog.kitware.com/category/all/" rel="category tag">All</a> Tags: <a href="https://blog.kitware.com/tag/cmake/" rel="tag">CMake</a> > <a href="https://blog.kitware.com/tag/release-notes/" rel="tag">Release Notes</a> > <a href="https://blog.kitware.com/tag/software-process/" rel="tag">Software Process</a>-->
+		 </div><!-- .entry-meta -->		
+		 
+	
+	<div class="postlistexcerpt noton768">
+		<p>We are pleased to announce that CMake 3.14.3 is now available for download. Please use the latest release from our download page: https://cmake.org/download/ Thanks for &#8230; <a class="styledbutton" href="https://blog.kitware.com/cmake-3-14-3-available-for-download/">Read More</a></p>
+	</div>
+	</header>
+	<div style="clear:both;"></div>
+	</div>
+</article>
+<article id="post-25769" class="articlebox articleboxsmall">
+	<div class="postlistbox withthumbnail">
+	
+	
+		<div class="postlistboximagesmall">
+			<a href="https://blog.kitware.com/cmake-3-14-2-available-for-download/" rel="bookmark"><img width="235" height="159" src="https://blog.kitware.com/wp-content/uploads/2019/05/235x159xRelease_CMake.jpg.pagespeed.ic.kPlpbtDgFv.jpg" class="attachment-235x3000 size-235x3000 wp-post-image" alt="" srcset="https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake.jpg.pagespeed.ic.wM722O9EJk.jpg 1024w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-300x203.jpg.pagespeed.ic.fndWwgkHWy.jpg 300w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-768x521.jpg.pagespeed.ic.fMn7M2Blcc.jpg 768w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-220x149.jpg.pagespeed.ic.QbB0aPlJ85.jpg 220w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-250x169.jpg.pagespeed.ic.RM6f0gLvWF.jpg 250w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-355x241.jpg.pagespeed.ic.ldItFPhlZW.jpg 355w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-730x495.jpg.pagespeed.ic.2LAyHHCpYT.jpg 730w, https://blog.kitware.com/wp-content/uploads/2019/05/xRelease_CMake-90x61.jpg.pagespeed.ic.r2FFCvsyid.jpg 90w" sizes="(max-width: 235px) 100vw, 235px"/></a>
+		</div>
+	<header class="withfeaturedimage">
+			<h2 class="postlisttitle entry-title"><a href="https://blog.kitware.com/cmake-3-14-2-available-for-download/" title="Permalink to CMake 3.14.2 available for download" rel="bookmark">CMake 3.14.2 available for download</a></h2>
+		
+		<div class="entry-meta">
+		<span class="author vcard notonmobile">
+
+<a href="https://blog.kitware.com/author/robert-maynard/" title="Posts by Robert Maynard" class="author url fn" rel="author">Robert Maynard</a>
+
+		April 12, 2019	
+		<!--in <a href="https://blog.kitware.com/category/all/" rel="category tag">All</a> Tags: <a href="https://blog.kitware.com/tag/cmake/" rel="tag">CMake</a> > <a href="https://blog.kitware.com/tag/release-notes/" rel="tag">Release Notes</a> > <a href="https://blog.kitware.com/tag/software-process/" rel="tag">Software Process</a>-->
+		 </div><!-- .entry-meta -->		
+		 
+	
+	<div class="postlistexcerpt noton768">
+		<p>We are pleased to announce that CMake 3.14.2 is now available for download. Please use the latest release from our download page: https://cmake.org/download/ Thanks for &#8230; <a class="styledbutton" href="https://blog.kitware.com/cmake-3-14-2-available-for-download/">Read More</a></p>
+	</div>
+	</header>
+	<div style="clear:both;"></div>
+	</div>
+</article>
+<article id="post-25700" class="articlebox articleboxsmall">
+	<div class="postlistbox withthumbnail">
+	
+	
+		<div class="postlistboximagesmall">
+			<a href="https://blog.kitware.com/ubuntu-cmake-repository-now-available/" rel="bookmark"><img width="235" height="159" src="https://blog.kitware.com/wp-content/uploads/2019/04/235x159xUbuntu_CMake.jpg.pagespeed.ic.0J-gkH3KAl.jpg" class="attachment-235x3000 size-235x3000 wp-post-image" alt="" srcset="https://blog.kitware.com/wp-content/uploads/2019/04/xUbuntu_CMake.jpg.pagespeed.ic.kV8wLTh6ax.jpg 1024w, https://blog.kitware.com/wp-content/uploads/2019/04/xUbuntu_CMake-300x203.jpg.pagespeed.ic.st28q7HXe6.jpg 300w, https://blog.kitware.com/wp-content/uploads/2019/04/xUbuntu_CMake-768x521.jpg.pagespeed.ic.BYnC5ivSfR.jpg 768w, https://blog.kitware.com/wp-content/uploads/2019/04/xUbuntu_CMake-220x149.jpg.pagespeed.ic.uK-pPjjtwR.jpg 220w, https://blog.kitware.com/wp-content/uploads/2019/04/xUbuntu_CMake-250x169.jpg.pagespeed.ic.SeuM3JqcsQ.jpg 250w, https://blog.kitware.com/wp-content/uploads/2019/04/xUbuntu_CMake-355x241.jpg.pagespeed.ic.SCXO--xAZ_.jpg 355w, https://blog.kitware.com/wp-content/uploads/2019/04/xUbuntu_CMake-730x495.jpg.pagespeed.ic.QW4fSfavcL.jpg 730w, https://blog.kitware.com/wp-content/uploads/2019/04/xUbuntu_CMake-90x61.jpg.pagespeed.ic.YWDQb24awG.jpg 90w" sizes="(max-width: 235px) 100vw, 235px"/></a>
+		</div>
+	<header class="withfeaturedimage">
+			<h2 class="postlisttitle entry-title"><a href="https://blog.kitware.com/ubuntu-cmake-repository-now-available/" title="Permalink to Ubuntu CMake Repository Now Available" rel="bookmark">Ubuntu CMake Repository Now Available</a></h2>
+		
+		<div class="entry-meta">
+		<span class="author vcard notonmobile">
+
+<a href="https://blog.kitware.com/author/kyle-edwards/" title="Posts by Kyle Edwards" class="author url fn" rel="author">Kyle Edwards</a>
+
+		April 5, 2019	
+		<!--in <a href="https://blog.kitware.com/category/all/" rel="category tag">All</a> Tags: <a href="https://blog.kitware.com/tag/cmake/" rel="tag">CMake</a> > <a href="https://blog.kitware.com/tag/software-process/" rel="tag">Software Process</a>-->
+		 </div><!-- .entry-meta -->		
+		 
+	
+	<div class="postlistexcerpt noton768">
+		<p>I am pleased to announce that Kitware is now offering an officially-supported set of Ubuntu packages for CMake. These CMake packages can be installed with &#8230; <a class="styledbutton" href="https://blog.kitware.com/ubuntu-cmake-repository-now-available/">Read More</a></p>
+	</div>
+	</header>
+	<div style="clear:both;"></div>
+	</div>
+</article>
+<article id="post-25639" class="articlebox articleboxsmall">
+	<div class="postlistbox withthumbnail">
+	
+	
+		<div class="postlistboximagesmall">
+			<a href="https://blog.kitware.com/cmake-3-14-1-available-for-download/" rel="bookmark"><img width="235" height="176" src="https://blog.kitware.com/wp-content/uploads/2019/01/default_featured_image.jpg.pagespeed.ce.EktocYQfnM.jpg" class="attachment-235x3000 size-235x3000 wp-post-image" alt="" srcset="https://blog.kitware.com/wp-content/uploads/2019/01/default_featured_image.jpg.pagespeed.ce.EktocYQfnM.jpg 4608w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-300x225.jpg.pagespeed.ic.Q5pP9uzwd4.jpg 300w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-768x576.jpg.pagespeed.ic.rZnoCh8QlO.jpg 768w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-1024x768.jpg.pagespeed.ic.R-Ux9rIDT-.jpg 1024w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-220x165.jpg.pagespeed.ic.WUmb_LpAdi.jpg 220w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-250x188.jpg.pagespeed.ic.GdpySOsA66.jpg 250w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-355x266.jpg.pagespeed.ic.J-VvpJ5Y05.jpg 355w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-730x548.jpg.pagespeed.ic.xnaDxMiU0h.jpg 730w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-90x68.jpg.pagespeed.ic.mUchFE_SPm.jpg 90w" sizes="(max-width: 235px) 100vw, 235px"/></a>
+		</div>
+	<header class="withfeaturedimage">
+			<h2 class="postlisttitle entry-title"><a href="https://blog.kitware.com/cmake-3-14-1-available-for-download/" title="Permalink to CMake 3.14.1 available for download" rel="bookmark">CMake 3.14.1 available for download</a></h2>
+		
+		<div class="entry-meta">
+		<span class="author vcard notonmobile">
+
+<a href="https://blog.kitware.com/author/robert-maynard/" title="Posts by Robert Maynard" class="author url fn" rel="author">Robert Maynard</a>
+
+		March 29, 2019	
+		<!--in <a href="https://blog.kitware.com/category/all/" rel="category tag">All</a> Tags: <a href="https://blog.kitware.com/tag/cmake/" rel="tag">CMake</a> > <a href="https://blog.kitware.com/tag/release-notes/" rel="tag">Release Notes</a> > <a href="https://blog.kitware.com/tag/software-process/" rel="tag">Software Process</a>-->
+		 </div><!-- .entry-meta -->		
+		 
+	
+	<div class="postlistexcerpt noton768">
+		<p>We are pleased to announce that CMake 3.14.1 is now available for download. Please use the latest release from our download page: https://cmake.org/download/ Thanks for &#8230; <a class="styledbutton" href="https://blog.kitware.com/cmake-3-14-1-available-for-download/">Read More</a></p>
+	</div>
+	</header>
+	<div style="clear:both;"></div>
+	</div>
+</article>
+<article id="post-25487" class="articlebox articleboxsmall">
+	<div class="postlistbox withthumbnail">
+	
+	
+		<div class="postlistboximagesmall">
+			<a href="https://blog.kitware.com/kitware-gets-mathematical-with-cmake-%cf%80-on-pi-day/" rel="bookmark"><img width="235" height="240" src="https://blog.kitware.com/wp-content/uploads/2019/03/235x240xPI_CAKE.jpg.pagespeed.ic.pR8DRKlF6L.jpg" class="attachment-235x3000 size-235x3000 wp-post-image" alt="" srcset="https://blog.kitware.com/wp-content/uploads/2019/03/xPI_CAKE.jpg.pagespeed.ic.jzw_dmkvxo.jpg 1360w, https://blog.kitware.com/wp-content/uploads/2019/03/xPI_CAKE-293x300.jpg.pagespeed.ic.kcZHAnSBPu.jpg 293w, https://blog.kitware.com/wp-content/uploads/2019/03/xPI_CAKE-768x786.jpg.pagespeed.ic.JoJ7Bb8eAg.jpg 768w, https://blog.kitware.com/wp-content/uploads/2019/03/xPI_CAKE-1001x1024.jpg.pagespeed.ic.KM0gR9zqTk.jpg 1001w, https://blog.kitware.com/wp-content/uploads/2019/03/xPI_CAKE-220x225.jpg.pagespeed.ic.P3fEbZrp32.jpg 220w, https://blog.kitware.com/wp-content/uploads/2019/03/xPI_CAKE-250x256.jpg.pagespeed.ic.Lku1ZJVUN_.jpg 250w, https://blog.kitware.com/wp-content/uploads/2019/03/xPI_CAKE-355x363.jpg.pagespeed.ic.rhcsNM8tj9.jpg 355w, https://blog.kitware.com/wp-content/uploads/2019/03/xPI_CAKE-730x747.jpg.pagespeed.ic.PQZX_DP6ey.jpg 730w, https://blog.kitware.com/wp-content/uploads/2019/03/xPI_CAKE-90x92.jpg.pagespeed.ic.lzlVKUKcYO.jpg 90w" sizes="(max-width: 235px) 100vw, 235px"/></a>
+		</div>
+	<header class="withfeaturedimage">
+			<h2 class="postlisttitle entry-title"><a href="https://blog.kitware.com/kitware-gets-mathematical-with-cmake-%cf%80-on-pi-day/" title="Permalink to Kitware gets Mathematical with CMake π on Pi Day" rel="bookmark">Kitware gets Mathematical with CMake π on Pi Day</a></h2>
+		
+		<div class="entry-meta">
+		<span class="author vcard notonmobile">
+
+<a href="https://blog.kitware.com/author/libby-rose/" title="Posts by Libby Rose" class="author url fn" rel="author">Libby Rose</a> and <a href="https://blog.kitware.com/author/robert-maynard/" title="Posts by Robert Maynard" class="author url fn" rel="author">Robert Maynard</a>
+
+		March 14, 2019	
+		<!--in <a href="https://blog.kitware.com/category/all/" rel="category tag">All</a> Tags: <a href="https://blog.kitware.com/tag/team-kitware/" rel="tag">#TeamKitware</a> > <a href="https://blog.kitware.com/tag/cmake/" rel="tag">CMake</a>-->
+		 </div><!-- .entry-meta -->		
+		 
+	
+	<div class="postlistexcerpt noton768">
+		<p>Kitwareans across the globe today celebrated Pi Day with some delicious round treats. Our CMake team also celebrated the timely release of CMake 3.14 by &#8230; <a class="styledbutton" href="https://blog.kitware.com/kitware-gets-mathematical-with-cmake-%cf%80-on-pi-day/">Read More</a></p>
+	</div>
+	</header>
+	<div style="clear:both;"></div>
+	</div>
+</article>
+<article id="post-25484" class="articlebox articleboxsmall">
+	<div class="postlistbox withthumbnail">
+	
+	
+		<div class="postlistboximagesmall">
+			<a href="https://blog.kitware.com/cmake-3-14-0-available-for-download/" rel="bookmark"><img width="235" height="176" src="https://blog.kitware.com/wp-content/uploads/2019/01/default_featured_image.jpg.pagespeed.ce.EktocYQfnM.jpg" class="attachment-235x3000 size-235x3000 wp-post-image" alt="" srcset="https://blog.kitware.com/wp-content/uploads/2019/01/default_featured_image.jpg.pagespeed.ce.EktocYQfnM.jpg 4608w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-300x225.jpg.pagespeed.ic.Q5pP9uzwd4.jpg 300w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-768x576.jpg.pagespeed.ic.rZnoCh8QlO.jpg 768w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-1024x768.jpg.pagespeed.ic.R-Ux9rIDT-.jpg 1024w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-220x165.jpg.pagespeed.ic.WUmb_LpAdi.jpg 220w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-250x188.jpg.pagespeed.ic.GdpySOsA66.jpg 250w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-355x266.jpg.pagespeed.ic.J-VvpJ5Y05.jpg 355w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-730x548.jpg.pagespeed.ic.xnaDxMiU0h.jpg 730w, https://blog.kitware.com/wp-content/uploads/2019/01/xdefault_featured_image-90x68.jpg.pagespeed.ic.mUchFE_SPm.jpg 90w" sizes="(max-width: 235px) 100vw, 235px"/></a>
+		</div>
+	<header class="withfeaturedimage">
+			<h2 class="postlisttitle entry-title"><a href="https://blog.kitware.com/cmake-3-14-0-available-for-download/" title="Permalink to CMake 3.14.0 available for download" rel="bookmark">CMake 3.14.0 available for download</a></h2>
+		
+		<div class="entry-meta">
+		<span class="author vcard notonmobile">
+
+<a href="https://blog.kitware.com/author/robert-maynard/" title="Posts by Robert Maynard" class="author url fn" rel="author">Robert Maynard</a>
+
+		March 14, 2019	
+		<!--in <a href="https://blog.kitware.com/category/all/" rel="category tag">All</a> Tags: <a href="https://blog.kitware.com/tag/cmake/" rel="tag">CMake</a> > <a href="https://blog.kitware.com/tag/release-notes/" rel="tag">Release Notes</a> > <a href="https://blog.kitware.com/tag/software-process/" rel="tag">Software Process</a>-->
+		 </div><!-- .entry-meta -->		
+		 
+	
+	<div class="postlistexcerpt noton768">
+		<p>I am happy to announce that CMake 3.14.0 is now available for download at:https://cmake.org/download/ The first two 3.14.0 release candidates included the FindOcatave module. This &#8230; <a class="styledbutton" href="https://blog.kitware.com/cmake-3-14-0-available-for-download/">Read More</a></p>
+	</div>
+	</header>
+	<div style="clear:both;"></div>
+	</div>
+</article>
+
+            <div style="clear:both;"></div>
+                    <div id="nav-below">
+            <div class="paginate"><span class='page current'>1</span><a href='https://blog.kitware.com/tag/cmake/page/2/' class='page paginate'>2</a><a href='https://blog.kitware.com/tag/cmake/page/3/' class='page paginate'>3</a><a href='https://blog.kitware.com/tag/cmake/page/4/' class='page paginate'>4</a><a href='https://blog.kitware.com/tag/cmake/page/5/' class='page paginate'>5</a><a href='https://blog.kitware.com/tag/cmake/page/6/' class='page paginate'>6</a><a href='https://blog.kitware.com/tag/cmake/page/7/' class='page paginate'>7</a><span class='gap'>...</span><a href='https://blog.kitware.com/tag/cmake/page/32/' class='page paginate'>32</a><a href='https://blog.kitware.com/tag/cmake/page/2/' class='next'>&raquo;</a></div>            </div><!-- #nav-below -->
+        
+        
+        </div><!-- #content -->
+        
+<div id="sidebar" class="grid_4 blog_sidebar">
+	<div id="tag_filter" class="tags">
+		<input type="text" id="filter" class="fuzzy-search" placeholder="filter tags...">
+		<ul class="filters">
+							<li>
+					<label class="filter-label">
+						<input type="checkbox" class="filter" data-value="Application Areas">
+						<span>Application Areas</span>
+					</label>
+				</li>
+							<li>
+					<label class="filter-label">
+						<input type="checkbox" class="filter" data-value="Technology">
+						<span>Technology</span>
+					</label>
+				</li>
+				    </ul>
+		<ul id="pag_list" class="tag_list list">
+							<li class="tag is_featured">
+					<a href="https://blog.kitware.com/tag/company-news/" class="tag_info" rel="tag">
+						Company News (763)
+					</a>
+																							<span id="tag_group" class="application areas">Application Areas</span>
+													<span id="tag_group" class="technology">Technology</span>
+															</li>
+							<li class="tag is_featured">
+					<a href="https://blog.kitware.com/tag/customer-spotlight/" class="tag_info" rel="tag">
+						Customer Spotlight (52)
+					</a>
+																							<span id="tag_group" class="application areas">Application Areas</span>
+													<span id="tag_group" class="technology">Technology</span>
+															</li>
+							<li class="tag is_featured">
+					<a href="https://blog.kitware.com/tag/team-kitware/" class="tag_info" rel="tag">
+						#TeamKitware (45)
+					</a>
+																							<span id="tag_group" class="application areas">Application Areas</span>
+													<span id="tag_group" class="technology">Technology</span>
+															</li>
+							<li class="tag is_featured">
+					<a href="https://blog.kitware.com/tag/kitware-source/" class="tag_info" rel="tag">
+						Kitware Source Quarterly Magazine (207)
+					</a>
+																							<span id="tag_group" class="application areas">Application Areas</span>
+													<span id="tag_group" class="technology">Technology</span>
+															</li>
+																						<li class="tag">
+						<a href="https://blog.kitware.com/tag/scientific-visualization/" class="tag_info" rel="tag">
+							Scientific Visualization (522)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/press/" class="tag_info" rel="tag">
+							Press Releases (502)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/medical-imaging/" class="tag_info" rel="tag">
+							Medical Imaging (402)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/software-process/" class="tag_info" rel="tag">
+							Software Process (367)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/paraview/" class="tag_info" rel="tag">
+							ParaView (341)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/cmake/" class="tag_info" rel="tag">
+							CMake (312)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/vtk/" class="tag_info" rel="tag">
+							VTK (298)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/itk/" class="tag_info" rel="tag">
+							ITK (237)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																							<li class="tag">
+						<a href="https://blog.kitware.com/tag/release-notes/" class="tag_info" rel="tag">
+							Release Notes (206)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/data-analytics/" class="tag_info" rel="tag">
+							Data &amp; Analytics (185)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/computer-vision/" class="tag_info" rel="tag">
+							Computer Vision (110)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/3d-slicer/" class="tag_info" rel="tag">
+							3D Slicer (105)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/open-chemistry/" class="tag_info" rel="tag">
+							Open Chemistry (89)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/cdash/" class="tag_info" rel="tag">
+							CDash (53)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																														<li class="tag">
+						<a href="https://blog.kitware.com/tag/igstk/" class="tag_info" rel="tag">
+							IGSTK (42)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-kitware-news/" class="tag_info" rel="tag">
+							The Source Kitware News (41)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/tomviz/" class="tag_info" rel="tag">
+							Tomviz (40)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/medical-visualization/" class="tag_info" rel="tag">
+							Medical Visualization (39)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/open-source/" class="tag_info" rel="tag">
+							Open Source (33)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-recent-releases/" class="tag_info" rel="tag">
+							The Source Recent Releases (33)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/midas/" class="tag_info" rel="tag">
+							MIDAS (30)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/resonant/" class="tag_info" rel="tag">
+							Resonant (29)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/python/" class="tag_info" rel="tag">
+							Python (26)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/medical-image-analysis/" class="tag_info" rel="tag">
+							Medical Image Analysis (22)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/kwiver/" class="tag_info" rel="tag">
+							KWIVER (21)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/ultrasound/" class="tag_info" rel="tag">
+							Ultrasound (18)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/pulse/" class="tag_info" rel="tag">
+							Pulse (13)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/veloview/" class="tag_info" rel="tag">
+							VeloView (12)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-21/" class="tag_info" rel="tag">
+							The Source Issue 21 (12)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-25/" class="tag_info" rel="tag">
+							The Source Issue 25 (12)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/physiology-modeling/" class="tag_info" rel="tag">
+							Physiology Modeling (11)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-24/" class="tag_info" rel="tag">
+							The Source Issue 24 (11)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/packaging/" class="tag_info" rel="tag">
+							Packaging (10)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/simulation/" class="tag_info" rel="tag">
+							Simulation (10)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/medical-training/" class="tag_info" rel="tag">
+							Medical Training (10)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/girder/" class="tag_info" rel="tag">
+							Girder (10)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/volview/" class="tag_info" rel="tag">
+							VolView (10)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-26/" class="tag_info" rel="tag">
+							The Source Issue 26 (10)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/cmb/" class="tag_info" rel="tag">
+							CMB (9)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-15/" class="tag_info" rel="tag">
+							The Source Issue 15 (9)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-19/" class="tag_info" rel="tag">
+							The Source Issue 19 (9)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-20/" class="tag_info" rel="tag">
+							The Source Issue 20 (9)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/testing/" class="tag_info" rel="tag">
+							Testing (8)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/medical-customer-highlight/" class="tag_info" rel="tag">
+							Medical Customer Highlight (8)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/activiz/" class="tag_info" rel="tag">
+							ActiViz (8)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/kiwiviewer/" class="tag_info" rel="tag">
+							KiwiViewer (8)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-17/" class="tag_info" rel="tag">
+							The Source Issue 17 (8)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-23/" class="tag_info" rel="tag">
+							The Source Issue 23 (8)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-29/" class="tag_info" rel="tag">
+							The Source Issue 29 (8)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/geojs/" class="tag_info" rel="tag">
+							GeoJS (7)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/computational-modeling/" class="tag_info" rel="tag">
+							Computational Modeling (7)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/geosciences/" class="tag_info" rel="tag">
+							Geosciences (7)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/batchmake/" class="tag_info" rel="tag">
+							BatchMake (7)
+						</a>
+																											<span id="tag_group" class="technology">Technology</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-16/" class="tag_info" rel="tag">
+							The Source Issue 16 (7)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-18/" class="tag_info" rel="tag">
+							The Source Issue 18 (7)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-22/" class="tag_info" rel="tag">
+							The Source Issue 22 (7)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-28/" class="tag_info" rel="tag">
+							The Source Issue 28 (7)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-30/" class="tag_info" rel="tag">
+							The Source Issue 30 (7)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-38/" class="tag_info" rel="tag">
+							The Source Issue 38 (6)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-40/" class="tag_info" rel="tag">
+							The Source Issue 40 (6)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-27/" class="tag_info" rel="tag">
+							The Source Issue 27 (6)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-31/" class="tag_info" rel="tag">
+							The Source Issue 31 (6)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-33/" class="tag_info" rel="tag">
+							The Source Issue 33 (6)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-42/" class="tag_info" rel="tag">
+							The Source Issue 42 (5)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-39/" class="tag_info" rel="tag">
+							The Source Issue 39 (5)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-32/" class="tag_info" rel="tag">
+							The Source Issue 32 (5)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-34/" class="tag_info" rel="tag">
+							The Source Issue 34 (5)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-35/" class="tag_info" rel="tag">
+							The Source Issue 35 (5)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-36/" class="tag_info" rel="tag">
+							The Source Issue 36 (5)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-41/" class="tag_info" rel="tag">
+							The Source Issue 41 (4)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-37/" class="tag_info" rel="tag">
+							The Source Issue 37 (4)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/github/" class="tag_info" rel="tag">
+							GitHub (4)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/javascript/" class="tag_info" rel="tag">
+							JavaScript (4)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/histomicstk/" class="tag_info" rel="tag">
+							HistomicsTK (4)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/deep-learning/" class="tag_info" rel="tag">
+							Deep Learning (4)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/virtual-reality/" class="tag_info" rel="tag">
+							Virtual Reality (4)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/virtual-surgery/" class="tag_info" rel="tag">
+							Virtual Surgery (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-43/" class="tag_info" rel="tag">
+							The Source Issue 43 (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/3d-reconstruction/" class="tag_info" rel="tag">
+							3D Reconstruction (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/kitware-source-software-process/" class="tag_info" rel="tag">
+							Kitware Source Software Process (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/nirfast/" class="tag_info" rel="tag">
+							NIRFAST (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/lidar/" class="tag_info" rel="tag">
+							Lidar (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/pypi/" class="tag_info" rel="tag">
+							PyPI (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/the-source-issue-44/" class="tag_info" rel="tag">
+							The Source Issue 44 (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/performance/" class="tag_info" rel="tag">
+							Performance (3)
+						</a>
+																											<span id="tag_group" class="application areas">Application Areas</span>
+																		</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/pathology/" class="tag_info" rel="tag">
+							Pathology (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/machine-learning/" class="tag_info" rel="tag">
+							Machine Learning (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/jupyter/" class="tag_info" rel="tag">
+							Jupyter (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/blood-vessels/" class="tag_info" rel="tag">
+							Blood Vessels (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/courses/" class="tag_info" rel="tag">
+							Courses (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/climate-data-analysis/" class="tag_info" rel="tag">
+							Climate Data Analysis (3)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/gpu/" class="tag_info" rel="tag">
+							GPU (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/release/" class="tag_info" rel="tag">
+							Release (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/automated-diagnosis/" class="tag_info" rel="tag">
+							Automated Diagnosis (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/point-cloud-library/" class="tag_info" rel="tag">
+							Point Cloud Library (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/pcl/" class="tag_info" rel="tag">
+							PCL (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/plugin/" class="tag_info" rel="tag">
+							plugin (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/unity/" class="tag_info" rel="tag">
+							Unity (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/paraview-developers-guide/" class="tag_info" rel="tag">
+							ParaView Developer's Guide (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/scikit-build/" class="tag_info" rel="tag">
+							scikit-build (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/resonant-lab/" class="tag_info" rel="tag">
+							Resonant Lab (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/candela/" class="tag_info" rel="tag">
+							Candela (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/vasculature/" class="tag_info" rel="tag">
+							Vasculature (2)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/opengl/" class="tag_info" rel="tag">
+							OpenGL (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/c-c/" class="tag_info" rel="tag">
+							C/C++ (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/computational-fluid-dynamics/" class="tag_info" rel="tag">
+							Computational Fluid Dynamics (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/molecule/" class="tag_info" rel="tag">
+							Molecule (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/ospray/" class="tag_info" rel="tag">
+							OSPRay (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/map-tk/" class="tag_info" rel="tag">
+							MAP-Tk (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/linux/" class="tag_info" rel="tag">
+							Linux (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/traumatic-brain-injury/" class="tag_info" rel="tag">
+							Traumatic Brain Injury (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/satellite-imagery/" class="tag_info" rel="tag">
+							Satellite imagery (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/danesfield/" class="tag_info" rel="tag">
+							Danesfield (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/core3d/" class="tag_info" rel="tag">
+							CORE3D (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/opencv/" class="tag_info" rel="tag">
+							OpenCV (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/slam/" class="tag_info" rel="tag">
+							slam (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/community/" class="tag_info" rel="tag">
+							Community (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/osx/" class="tag_info" rel="tag">
+							OSX (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/histology/" class="tag_info" rel="tag">
+							Histology (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/cgal/" class="tag_info" rel="tag">
+							CGAL (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/gis-geospatial-opengeoscience-kitware-visualization-deeplearning/" class="tag_info" rel="tag">
+							#gis #geospatial #opengeoscience #kitware #visualization #deeplearning (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/5-0-0/" class="tag_info" rel="tag">
+							5.0.0 (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/rendering/" class="tag_info" rel="tag">
+							rendering (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/gltf/" class="tag_info" rel="tag">
+							glTF (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/docker/" class="tag_info" rel="tag">
+							Docker (1)
+						</a>
+																	</li>
+																<li class="tag">
+						<a href="https://blog.kitware.com/tag/windows/" class="tag_info" rel="tag">
+							Windows (1)
+						</a>
+																	</li>
+							
+		</ul>
+		<div class="pagination-container">
+			<div class="page-nav">
+				<ul class="pagination"></ul>
+			</div>
+		</div>
+
+	</div>
+
+			<div id="secondary" class="widget-area">
+			<ul class="subscribe">
+				<li id="blog_subscription-3" class="widget-container widget_blog_subscription jetpack_subscription_widget"><h3 class="widget-title">Subscribe to Blog via Email</h3>
+            <form action="#" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-3">
+				                    <p id="subscribe-email">
+                        <label id="jetpack-subscribe-label" class="screen-reader-text" for="subscribe-field-blog_subscription-3">
+							Email Address                        </label>
+                        <input type="email" name="email" required="required" class="required" value="" id="subscribe-field-blog_subscription-3" placeholder="Email Address"/>
+                    </p>
+
+                    <p id="subscribe-submit">
+                        <input type="hidden" name="action" value="subscribe"/>
+                        <input type="hidden" name="source" value="https://blog.kitware.com/tag/cmake/"/>
+                        <input type="hidden" name="sub-type" value="widget"/>
+                        <input type="hidden" name="redirect_fragment" value="blog_subscription-3"/>
+						                        <button type="submit" name="jetpack_subscriptions_widget">
+	                        Subscribe                        </button>
+                    </p>
+				            </form>
+		
+</li>				<div style="clear:both;"></div>
+			</ul>
+		</div><!-- #secondary .widget-area -->
+	
+</div>
+        <div style="clear:both;"></div>
+    </div><!-- #contentcontainer -->
+</div><!-- #wrapper -->
+		<div id="footer">
+			<div id="colophon" class="container_16 containermargin">
+				<div id="footer-info">
+					<div id="copyright">
+						Content distributed under a <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a> license					</div>
+					<!-- <a href="https://www.kitware.com">Kitware</a> | <a href="https://www.kitware.com/what-we-offer/">What We Do</a> | <a href="https://www.kitware.com/platforms/">Open Source</a> | <a href="https://www.kitware.com/contact-us/">Contact</a> -->
+					<div class="menu footernav"><ul id="menu-footer-menu" class="menu"><li id="menu-item-22476" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22476"><a target="_blank" rel="noopener noreferrer" href="https://www.kitware.com/">Kitware</a></li>
+<li id="menu-item-22477" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22477"><a target="_blank" rel="noopener noreferrer" href="https://www.kitware.com/what-we-offer/">What We Do</a></li>
+<li id="menu-item-22478" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22478"><a target="_blank" rel="noopener noreferrer" href="https://www.kitware.com/platforms/">Open Source</a></li>
+<li id="menu-item-22479" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22479"><a target="_blank" rel="noopener noreferrer" href="https://www.kitware.com/privacy/">Privacy Notice</a></li>
+<li id="menu-item-22480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22480"><a target="_blank" rel="noopener noreferrer" href="https://www.kitware.com/contact-us/">Contact</a></li>
+</ul></div>					<div id="iconmenu" class="menu icon_menu"><ul id="menu-social" class="menu"><li id="menu-item-1571" class="icon-linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-1571"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/kitware-inc-">Linked In</a></li>
+<li id="menu-item-1572" class="icon-facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-1572"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/kitware">Facebook</a></li>
+<li id="menu-item-1570" class="icon-twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-1570"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Kitware">Twitter</a></li>
+<li id="menu-item-23044" class="icon-rss menu-item menu-item-type-custom menu-item-object-custom menu-item-23044"><a target="_blank" rel="noopener noreferrer" href="https://blog.kitware.com/feed/">RSS</a></li>
+</ul></div>					<div style="clear:both;"></div>
+				</div>
+			</div><!-- #colophon -->
+			<div style="clear:both;"></div>
+		</div><!-- #footer -->
+				<script type="text/javascript" alt='evo_map_styles'>//<![CDATA[
+var gmapstyles='default';
+//]]></script>		
+		<div class='evo_lightboxes' style='display:block'>					<div class='evo_lightbox eventcard eventon_events_list' id=''>
+						<div class="evo_content_in">													
+							<div class="evo_content_inin">
+								<div class="evo_lightbox_content">
+									<a class='evolbclose '>X</a>
+									<div class='evo_lightbox_body eventon_list_event evo_pop_body evcal_eventcard'> </div>
+								</div>
+							</div>							
+						</div>
+					</div>
+					</div><script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201924'></script>
+<script src="https://blog.kitware.com/wp-content/themes,_solidblog-child,_script,_list.min.js+themes,_solidblog-child,_script,_kwblog.js+plugins,_eventON,_assets,_js,_eventon_functions.js,qver==2.6.15.pagespeed.jc.TvoeE93Swj.js"></script><script>eval(mod_pagespeed_YBaEvT0ubK);</script>
+<script>eval(mod_pagespeed_pkjAvF2zSP);</script>
+<script>eval(mod_pagespeed_QoryCqNWtA);</script>
+<script src="https://blog.kitware.com/wp-content/plugins/eventON/assets/js/handlebars.js,qver==2.6.15+jquery.mobile.min.js,qver==2.6.15+jquery.mousewheel.min.js,qver==2.6.15.pagespeed.jc.XM2Nv5H4ZL.js"></script><script>eval(mod_pagespeed_vYGWjBzhS5);</script>
+<script>eval(mod_pagespeed_HbVCfK4R81);</script>
+<script>eval(mod_pagespeed_JxgQEJSdlN);</script>
+<script type='text/javascript'>//<![CDATA[
+var the_ajax_script={"ajaxurl":"https:\/\/blog.kitware.com\/wp-admin\/admin-ajax.php","postnonce":"d68e0b29bc"};
+//]]></script>
+<script type='text/javascript' src='//blog.kitware.com/wp-content/plugins/eventON/assets/js/eventon_script.js,qver=2.6.15.pagespeed.jm.RL_bMYSJI3.js'></script>
+<script type="text/javascript">(function(undefined){var _targetWindow="prefer-popup";window.NSLPopupCenter=function(url,title,w,h){var userAgent=navigator.userAgent,mobile=function(){return/\b(iPhone|iP[ao]d)/.test(userAgent)||/\b(iP[ao]d)/.test(userAgent)||/Android/i.test(userAgent)||/Mobile/i.test(userAgent);},screenX=window.screenX!==undefined?window.screenX:window.screenLeft,screenY=window.screenY!==undefined?window.screenY:window.screenTop,outerWidth=window.outerWidth!==undefined?window.outerWidth:document.documentElement.clientWidth,outerHeight=window.outerHeight!==undefined?window.outerHeight:document.documentElement.clientHeight-22,targetWidth=mobile()?null:w,targetHeight=mobile()?null:h,V=screenX<0?window.screen.width+screenX:screenX,left=parseInt(V+(outerWidth-targetWidth)/2,10),right=parseInt(screenY+(outerHeight-targetHeight)/2.5,10),features=[];if(targetWidth!==null){features.push('width='+targetWidth);}if(targetHeight!==null){features.push('height='+targetHeight);}features.push('left='+left);features.push('top='+right);features.push('scrollbars=1');var newWindow=window.open(url,title,features.join(','));if(window.focus){newWindow.focus();}return newWindow;};var isWebView=null;function checkWebView(){if(isWebView===null){function _detectOS(ua){switch(true){case/Android/.test(ua):return"Android";case/iPhone|iPad|iPod/.test(ua):return"iOS";case/Windows/.test(ua):return"Windows";case/Mac OS X/.test(ua):return"Mac";case/CrOS/.test(ua):return"Chrome OS";case/Firefox/.test(ua):return"Firefox OS";}return"";}function _detectBrowser(ua){var android=/Android/.test(ua);switch(true){case/CriOS/.test(ua):return"Chrome for iOS";case/Edge/.test(ua):return"Edge";case android&&/Silk\//.test(ua):return"Silk";case/Chrome/.test(ua):return"Chrome";case/Firefox/.test(ua):return"Firefox";case android:return"AOSP";case/MSIE|Trident/.test(ua):return"IE";case/Safari\//.test(ua):return"Safari";case/AppleWebKit/.test(ua):return"WebKit";}return"";}function _detectBrowserVersion(ua,browser){switch(browser){case"Chrome for iOS":return _getVersion(ua,"CriOS/");case"Edge":return _getVersion(ua,"Edge/");case"Chrome":return _getVersion(ua,"Chrome/");case"Firefox":return _getVersion(ua,"Firefox/");case"Silk":return _getVersion(ua,"Silk/");case"AOSP":return _getVersion(ua,"Version/");case"IE":return/IEMobile/.test(ua)?_getVersion(ua,"IEMobile/"):/MSIE/.test(ua)?_getVersion(ua,"MSIE "):_getVersion(ua,"rv:");case"Safari":return _getVersion(ua,"Version/");case"WebKit":return _getVersion(ua,"WebKit/");}return"0.0.0";}function _getVersion(ua,token){try{return _normalizeSemverString(ua.split(token)[1].trim().split(/[^\w\.]/)[0]);}catch(o_O){}return"0.0.0";}function _normalizeSemverString(version){var ary=version.split(/[\._]/);return(parseInt(ary[0],10)||0)+"."+(parseInt(ary[1],10)||0)+"."+(parseInt(ary[2],10)||0);}function _isWebView(ua,os,browser,version,options){switch(os+browser){case"iOSSafari":return false;case"iOSWebKit":return _isWebView_iOS(options);case"AndroidAOSP":return false;case"AndroidChrome":return parseFloat(version)>=42?/; wv/.test(ua):/\d{2}\.0\.0/.test(version)?true:_isWebView_Android(options);}return false;}function _isWebView_iOS(options){var document=(window["document"]||{});if("WEB_VIEW"in options){return options["WEB_VIEW"];}return!("fullscreenEnabled"in document||"webkitFullscreenEnabled"in document||false);}function _isWebView_Android(options){if("WEB_VIEW"in options){return options["WEB_VIEW"];}return!("requestFileSystem"in window||"webkitRequestFileSystem"in window||false);}var options={};var nav=window.navigator||{};var ua=nav.userAgent||"";var os=_detectOS(ua);var browser=_detectBrowser(ua);var browserVersion=_detectBrowserVersion(ua,browser);isWebView=_isWebView(ua,os,browser,browserVersion,options);}return isWebView;}window._nsl.push(function($){var targetWindow=_targetWindow||'prefer-popup';$('a[data-plugin="nsl"][data-action="connect"],a[data-plugin="nsl"][data-action="link"]').on('click',function(e){var $target=$(this),href=$target.attr('href'),success=false;if(href.indexOf('?')!==-1){href+='&';}else{href+='?';}var redirectTo=$target.data('redirect');if(redirectTo==='current'){href+='redirect='+encodeURIComponent(window.location.href)+'&';}else if(redirectTo&&redirectTo!==''){href+='redirect='+encodeURIComponent(redirectTo)+'&';}if(targetWindow!=='prefer-same-window'&&checkWebView()){targetWindow='prefer-same-window';}if(targetWindow==='prefer-popup'){if(NSLPopupCenter(href+'display=popup','nsl-social-connect',$target.data('popupwidth'),$target.data('popupheight'))){success=true;e.preventDefault();}}else if(targetWindow==='prefer-new-tab'){var newTab=window.open(href+'display=popup','_blank');if(newTab){if(window.focus){newTab.focus();}success=true;e.preventDefault();}}if(!success){window.location=href;e.preventDefault();}});var googleLoginButton=$('a[data-plugin="nsl"][data-provider="google"]');if(googleLoginButton.length&&checkWebView()){googleLoginButton.remove();}});})();</script><script type='text/javascript' src='https://stats.wp.com/e-201924.js' async='async' defer='defer'></script>
+<script type='text/javascript'>_stq=window._stq||[];_stq.push(['view',{v:'ext',j:'1:7.3.1',blog:'101150012',post:'0',tz:'-4',srv:'blog.kitware.com'}]);_stq.push(['clickTrackerInit','101150012','0']);</script>
+
+		
+	</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1560591707 -->

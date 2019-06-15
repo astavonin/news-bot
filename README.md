@@ -2,11 +2,11 @@ This is C++ News Bot which is able to collect news from multiple data sources li
 
 - Best of day/week/month/year StackOverflow question;
 - [ACCU Overload](https://accu.org/index.php/journals/c78/) journals update;
-- [BOOST](https://www.boost.org/) library updates.
+- [BOOST](https://www.boost.org/) library updates;
+- CMake releases.
 
 News Bot will support some extra data sources soon:
 
-- CMake releases;
 - OpenSSL updates;
 - libCURL updates;
 - Starred items from [awesome-cpp](https://github.com/fffaraz/awesome-cpp).

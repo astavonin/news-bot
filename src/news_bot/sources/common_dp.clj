@@ -5,7 +5,8 @@
             [slingshot.slingshot :refer [throw+ try+]]
             [clj-http.client :as http]
             [taoensso.timbre :as log]
-            [hickory.core :as hc]))
+            [hickory.core :as hc]
+            [clojure.string :as string]))
 
 (defn load-page [page]
   (try+
@@ -19,6 +20,10 @@
     (catch Object _
       (log/error "unable to load Overload" (:message &throw-context))
       "")))
+
+(defn trim-content [content]
+  (-> content
+      :content first string/trim))
 
 (defn- load-releases [news-page parser]
   {:post [(s/valid? ::i/posts-coll %)]}

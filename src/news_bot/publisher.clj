@@ -4,6 +4,7 @@
             [clj-time.core :as time]
             [news-bot.sources.overload :as overload]
             [news-bot.sources.boost :as boost]
+            [news-bot.sources.cmake :as cmake]
             [news-bot.persistence :as p]
             [news-bot.sources.interface :as sources]
             [taoensso.timbre :as log]))
@@ -46,6 +47,7 @@
                (so/get-data-provider 1 :day)))]             ;   just regular day
     (publish-so-update bucket dp on-date))
   (publish-update bucket overload/get-data-provider)
+  (publish-update bucket cmake/get-data-provider)
   (publish-update bucket boost/get-data-provider))
 
 ;(try
