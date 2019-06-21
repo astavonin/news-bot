@@ -48,4 +48,5 @@
 (def overload-test-page "test/data/overload/overload.html")
 (def boost-test-page "test/data/boost/Boost News.htm")
 (def cmake-test-page "test/data/cmake/cmake.html")
+(def clang-status-test-page "test/data/compiler_status/cxx_status.html")
 (def bucket-name "localstack-test-bucket")

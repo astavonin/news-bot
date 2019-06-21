@@ -82,7 +82,7 @@
     <orderEntry type="library" name="Leiningen: org.apache.httpcomponents/httpmime:4.5" level="project" />
     <orderEntry type="library" name="Leiningen: org.bouncycastle/bcpkix-jdk15on:1.54" level="project" />
     <orderEntry type="library" name="Leiningen: org.bouncycastle/bcprov-jdk15on:1.54" level="project" />
-    <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.10.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.clojure/clojure:1.10.1" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/clojurescript:1.9.293" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/core.async:0.4.490" level="project" />
     <orderEntry type="library" name="Leiningen: org.clojure/core.cache:0.6.5" level="project" />
