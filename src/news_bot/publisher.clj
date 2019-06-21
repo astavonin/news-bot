@@ -5,6 +5,7 @@
             [news-bot.sources.overload :as overload]
             [news-bot.sources.boost :as boost]
             [news-bot.sources.cmake :as cmake]
+            [news-bot.sources.clang-features :as clang-features]
             [news-bot.persistence :as p]
             [news-bot.sources.interface :as sources]
             [taoensso.timbre :as log]))
@@ -48,7 +49,8 @@
     (publish-so-update bucket dp on-date))
   (publish-update bucket overload/get-data-provider)
   (publish-update bucket cmake/get-data-provider)
-  (publish-update bucket boost/get-data-provider))
+  (publish-update bucket boost/get-data-provider)
+  (publish-update bucket clang-features/get-data-provider))
 
 ;(try
 ;  (t/post-updates so-news-reader)
