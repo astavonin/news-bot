@@ -40,11 +40,15 @@
       (str/replace #"c\+\+" "cpp")
       (str/replace #"-" "_")))
 
+(defn- preprocess-message [msg]
+  (-> msg
+      (str/replace #"\*" "")))
+
 (defn- post-update [rec]
   {:pre [(s/valid? ::sources/post-rec rec)]}
 
   (let [tags (str/join " " (map #(str "#" (preprocess-tag %)) (rec :tags)))
-        msg  (str (rec :title) "\n\n" tags "\n\n" (rec :link))]
+        msg  (str (preprocess-message (rec :title)) "\n\n" tags "\n\n" (rec :link))]
     (try
       (t/statuses-update :oauth-creds @cred :params {:status msg})
       (catch Exception e
@@ -59,4 +63,3 @@
    :post [(s/valid? ::p/news-list %)]}
 
   (into #{} (keep post-update (sources/load-news update))))
-
