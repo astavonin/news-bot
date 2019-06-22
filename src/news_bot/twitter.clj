@@ -52,7 +52,7 @@
     (try
       (t/statuses-update :oauth-creds @cred :params {:status msg})
       (catch Exception e
-        (log/error "Twitter posting error:" (ex-message e))
+        (log/error "Twitter posting error:" (ex-message e) ". Message:" msg)
         (throw (ex-info "Twitter error" {:category ::posting
                                          :type     ::twitter
                                          :data     (ex-message e)}))))
