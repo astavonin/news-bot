@@ -18,11 +18,7 @@
                                   (p/load-twitter-cred (conf/config :twitter-secret-id))
                                   (catch Exception e
                                     (log/warn "unable to load twitter credentials from persistence" e)
-                                    ; for testing proposes only, because of LocalStack issue
-                                    (let [f (io/file "_twitter.edn")]
-                                      (if (.exists f)
-                                        (edn/read-string (slurp f))
-                                        {:AppKey "" :AppSecret "" :UserToken "" :UserTokenSecret ""}))))]
+                                    (edn/read-string (slurp (io/resource "_twitter.edn")))))]
                             (oauth/make-oauth-creds app-key app-secret user-token user-token-secret))))
 
 (defn set-cred [new-cred]
