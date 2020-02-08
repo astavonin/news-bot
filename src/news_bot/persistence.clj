@@ -114,7 +114,8 @@
                                                :data     (or (response# :Error) response#)}))
        response#)))
 
-(defn load-twitter-cred [cred-id]
+(defn
+  load-twitter-cred [cred-id]
   {:pre  [(s/valid? not-empty cred-id)]
    :post [(s/valid? ::twitter-cred %)]}
 

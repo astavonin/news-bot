@@ -30,8 +30,8 @@
   ; https://github.com/localstack/localstack/issues/1002
   (p/set-aws-endpoint :env-type {:s3 :localstack})
   (let [id (helper/start-stack)]
-    (when-not (helper/wait-for-stack? id 60)
-      (throw "LocalStack is not ready in 60s."))
+    ;(when-not (helper/wait-for-stack? id 60)
+      ;(throw "LocalStack is not ready in 60s."))
     (p/create-bucket bucket-name))
   )
 
