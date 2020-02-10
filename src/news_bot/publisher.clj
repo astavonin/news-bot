@@ -50,7 +50,19 @@
   (publish-update bucket overload/get-data-provider)
   (publish-update bucket cmake/get-data-provider)
   (publish-update bucket boost/get-data-provider)
-  (publish-update bucket clang-features/get-data-provider))
+  ;(publish-update bucket clang-features/get-data-provider)  ; something mysterious is going on here
+  )
+
+
+;(publish-update "cpp-news-bot-singapore" clang-features/get-data-provider)
+;
+;(def source :clang-cxx)
+;(def bucket "cpp-news-bot-singapore")
+;
+;(def already-posted (p/load-data bucket source))
+;(def ds (clang-features/get-data-provider already-posted))
+;(twitter/post-updates ds)
+;(sources/load-news ds)
 
 ;(try
 ;  (t/post-updates so-news-reader)
